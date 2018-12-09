@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace Nastrond {
@@ -20,9 +21,18 @@ namespace Nastrond {
             }
         }
 
-        List<GameObject> entities;
+        List<GameObject> entities = new List<GameObject>();
+
+        void Start() {
+        }
 
         public List<GameObject> GetEntities() {
+            List<Entity> e = FindObjectsOfType<Entity>().ToList();
+            foreach(Entity entity in e) {
+                if(!entities.Contains(entity.gameObject))
+                entities.Add(entity.gameObject);
+            }
+
             return entities;
         }
 
