@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace Nastrond {
-    public class Component{
-
+    public class Component : MonoBehaviour{
+        void Start() {
+            ComponentManager.Instance.AddComponentToManager(this);
+        }
     }
 }

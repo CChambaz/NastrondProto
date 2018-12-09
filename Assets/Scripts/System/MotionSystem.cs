@@ -10,6 +10,9 @@ namespace Nastrond {
 
         // Use this for initialization
         void Start() {
+            motionComponents = new List<MotionComponent>();
+            transformComponents = new List<Transform>();
+
             List<GameObject> tmpEntities = GetEntities();
 
             foreach (GameObject e in tmpEntities) {
@@ -22,8 +25,10 @@ namespace Nastrond {
 
         // Update is called once per frame
         void Update() {
-            foreach (MotionComponent motionComponent in motionComponents) {
-                transformComponents += Time.deltaTime * motionComponent.
+            for (int index = 0; index < motionComponents.Count; index++) {
+                MotionComponent motionComponent = motionComponents[index];
+                Transform trans = transformComponents[index];
+                trans.position += Time.deltaTime * (Vector3) motionComponent.direction.normalized * motionComponent.maxSpeed;
             }
         }
     }
