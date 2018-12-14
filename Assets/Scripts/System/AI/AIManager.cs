@@ -66,7 +66,7 @@ namespace Nastrond {
                         tmp.GetComponent<GraphNodeComponent>().neighbors = new List<GameObject>();
                         tmp.AddComponent<Entity>();
                         tmp.transform.position = tilemap.GetCellCenterWorld(localPlace);
-
+                        tmp.GetComponent<GraphNodeComponent>().position = tmp.transform;
                         graph[indexX, indexY] = tmp;
                     }
                 }
