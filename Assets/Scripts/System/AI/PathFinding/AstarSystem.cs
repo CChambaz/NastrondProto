@@ -1,8 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Priority_Queue;
 using UnityEngine;
-using UnityEngine.Assertions.Comparers;
 
 namespace Nastrond {
     public class AstarSystem : System {
@@ -83,12 +81,16 @@ namespace Nastrond {
 
                 foreach(GameObject neighbor in current.neighbors) {
                     GraphNodeComponent currentNeighbor = neighbor.GetComponent<GraphNodeComponent>();
-                    float newCost = costSoFar[current] + current.cost;
+                    float distance = Vector2.Distance(current.position.position, currentNeighbor.position.position);
+
+                    float newCost = costSoFar[current] + distance + current.cost;
 
                     if(!costSoFar.ContainsKey(currentNeighbor) || newCost < costSoFar[currentNeighbor]) {
-                        costSoFar[currentNeighbor] = newCost;
-                        float priority = newCost + Vector2.Distance(transformComponents[graphNodeComponents.IndexOf(currentNeighbor)].position, transformComponents[graphNodeComponents.IndexOf(current)].position);
+                        float priority = newCost + distance;
                         openNode.Enqueue(currentNeighbor, priority);
+
+
+                        costSoFar[currentNeighbor] = newCost;
                         cameFrom[currentNeighbor] = current;
                     }
                 }

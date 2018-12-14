@@ -5,6 +5,7 @@ using UnityEngine;
 namespace Nastrond {
     public class MotionComponent : Component {
         public float maxSpeed;
+        public float speed;
         public Vector2 direction;
     }
 }
