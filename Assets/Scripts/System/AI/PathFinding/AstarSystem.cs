@@ -102,7 +102,7 @@ namespace Nastrond {
 
             path.Add(nodeOrigin);
             path.Reverse();
-            Debug.Log(path.Count);
+
             return path.ToArray();
         }
     }

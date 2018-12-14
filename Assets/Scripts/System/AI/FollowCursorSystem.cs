@@ -24,7 +24,7 @@ namespace Nastrond
                     transformComponents.Add(e.GetComponent<Transform>());
                 }
             }
-
+            
             aStarSystem = FindObjectOfType<AstarSystem>();
         }
 
@@ -32,6 +32,7 @@ namespace Nastrond
         void Update()
         {
             if (Input.GetButtonDown("Fire1")) {
+                float time = Time.realtimeSinceStartup;
                 for (int index = 0; index < pathComponents.Count; index++) {
                     PathComponent pathComponent = pathComponents[index];
                     Transform transformComponent = transformComponents[index];
@@ -39,6 +40,7 @@ namespace Nastrond
                     pathComponent.nodes = aStarSystem.GetPath(transformComponent, Vector2.zero);
                     pathComponent.index = 0;
                 }
+                Debug.Log("time = " + (Time.realtimeSinceStartup - time));
             }
         }
     }
