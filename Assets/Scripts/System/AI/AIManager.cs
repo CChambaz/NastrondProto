@@ -18,6 +18,7 @@ namespace Nastrond {
         [SerializeField] TileBase[] solidTiles;
         [SerializeField] TileCost[] costTiles;
         [SerializeField] Tilemap tilemap;
+        [SerializeField] Tilemap buildingTilemap;
         
         public void Bake() {
             //Clean previous entity
@@ -57,7 +58,7 @@ namespace Nastrond {
             foreach(Vector3Int pos in tilemap.cellBounds.allPositionsWithin) {
                 Vector3Int localPlace = new Vector3Int(pos.x, pos.y, pos.z);
                 Vector3 place = tilemap.CellToWorld(localPlace);
-                if(tilemap.HasTile(localPlace)) {
+                if(tilemap.HasTile(localPlace) && ! buildingTilemap.HasTile(localPlace)) {
                     if(!solidTiles.Contains(tilemap.GetTile(localPlace))) {
                         GameObject tmp = new GameObject {name = "Node[" + indexX + "." + indexY + "]"};
                         tmp.AddComponent<GraphNodeComponent>();
