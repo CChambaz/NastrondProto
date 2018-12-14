@@ -27,7 +27,7 @@ namespace Nastrond {
             for (int index = 0; index < motionComponents.Count; index++) {
                 MotionComponent motionComponent = motionComponents[index];
                 Transform trans = transformComponents[index];
-                trans.position += Time.deltaTime * (Vector3) motionComponent.direction.normalized * motionComponent.maxSpeed;
+                trans.position += Time.deltaTime * (Vector3) motionComponent.direction.normalized * motionComponent.speed;
             }
         }
     }
