@@ -2,16 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DwarfsSlots : Component
+namespace Nastrond
 {
-    public enum BuildingType
-    {
-        DWELLING,
-        WORKING_PLACE
-    }
+    public class DwarfsSlots:Component {
+        public enum BuildingType {
+            DWELLING,
+            WORKING_PLACE
+        }
 
-    public BuildingType buildingType = BuildingType.WORKING_PLACE;
-    public int maxNumberSlots = 0;
-    public int attributedDwarfsNumber = 0;
-    public int dwarfsAlreadyIn = 0;
+        public BuildingType buildingType = BuildingType.WORKING_PLACE;
+        public int maxNumberSlots = 0;
+        public int attributedDwarfsNumber = 0;
+        public int dwarfsAlreadyIn = 0;
+    }
 }

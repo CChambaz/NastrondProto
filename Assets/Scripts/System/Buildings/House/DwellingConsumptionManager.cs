@@ -2,30 +2,29 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DwellingConsumptionManager : Nastrond.System
+namespace Nastrond
 {
-    private FoodInventory[] foodInventorys;
+    public class DwellingConsumptionManager:System {
+        private FoodInventory[] foodInventorys;
 
-    private void Start()
-    {
-        Entity[] entitys = FindObjectsOfType<Entity>();
-        List<FoodInventory> tmpFoodInventorys = new List<FoodInventory>();
+        private void Start() {
+            Entity[] entitys = FindObjectsOfType<Entity>();
+            List<FoodInventory> tmpFoodInventorys = new List<FoodInventory>();
 
-        foreach (Entity entity in entitys)
-        {
-            FoodInventory tmpFoodInventory = entity.GetComponent<FoodInventory>();
+            foreach(Entity entity in entitys) {
+                FoodInventory tmpFoodInventory = entity.GetComponent<FoodInventory>();
 
-            if (tmpFoodInventory != null)
-            {
-                tmpFoodInventorys.Add(tmpFoodInventory);
+                if(tmpFoodInventory != null) {
+                    tmpFoodInventorys.Add(tmpFoodInventory);
+                }
             }
-        }
 
-        foodInventorys = new FoodInventory[tmpFoodInventorys.Count];
+            foodInventorys = new FoodInventory[tmpFoodInventorys.Count];
 
-        for (int i = 0; i < tmpFoodInventorys.Count; i++)
-        {
-            foodInventorys[i] = tmpFoodInventorys[i];
+            for(int i = 0;i < tmpFoodInventorys.Count;i++) {
+                foodInventorys[i] = tmpFoodInventorys[i];
+            }
         }
     }
 }
+

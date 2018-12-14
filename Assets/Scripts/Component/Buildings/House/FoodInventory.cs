@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FoodInventory : Component
+namespace Nastrond
 {
-    
+    public class FoodInventory:Component {
+
+    }
 }

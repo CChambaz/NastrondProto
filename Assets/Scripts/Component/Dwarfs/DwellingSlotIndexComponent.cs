@@ -4,8 +4,8 @@ using UnityEngine;
 
 namespace Nastrond
 {
-    public class DwellingSlotsManager:Nastrond.System {
-
-
+    public class DwellingSlotIndexComponent:Component
+    {
+        public DwarfsSlots dwarfsSlots;
     }
 }
