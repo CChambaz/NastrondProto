@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEditor;
 using UnityEngine;
@@ -7,7 +8,15 @@ using UnityEngine.Tilemaps;
 namespace Nastrond {
     public class AIManager : System {
 
-        [SerializeField] List<TileBase> solidTiles;
+        [Serializable]
+        struct TileCost
+        {
+            public TileBase tileBase;
+            public short cost;
+        }
+
+        [SerializeField] TileBase[] solidTiles;
+        [SerializeField] TileCost[] costTiles;
         [SerializeField] Tilemap tilemap;
         
         public void Bake() {
@@ -52,7 +61,14 @@ namespace Nastrond {
                     if(!solidTiles.Contains(tilemap.GetTile(localPlace))) {
                         GameObject tmp = new GameObject {name = "Node[" + indexX + "." + indexY + "]"};
                         tmp.AddComponent<GraphNodeComponent>();
-                        tmp.GetComponent<GraphNodeComponent>().cost = 1;
+                        int cost = 0;
+                        foreach (TileCost costTile in costTiles) {
+                            if (costTile.tileBase == tilemap.GetTile(localPlace)) {
+                                cost = costTile.cost;
+                            }
+                        }
+
+                        tmp.GetComponent<GraphNodeComponent>().cost = cost;
                         tmp.GetComponent<GraphNodeComponent>().neighbors = new List<GameObject>();
                         tmp.AddComponent<Entity>();
                         tmp.transform.position = tilemap.GetCellCenterWorld(localPlace);
