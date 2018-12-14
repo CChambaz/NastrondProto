@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 namespace Nastrond {
@@ -9,6 +8,7 @@ namespace Nastrond {
         public Transform position;
 
         void OnDrawGizmos() {
+            Gizmos.color = new Color(1.0f, 1.0f, 1.0f, 0.2f);
             foreach (GameObject neighbor in neighbors) {
                 Gizmos.DrawLine(transform.position, neighbor.transform.position);
             }

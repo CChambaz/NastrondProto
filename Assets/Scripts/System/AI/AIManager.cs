@@ -1,9 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using UnityEditor;
 using UnityEngine;
-using UnityEngine.Experimental.PlayerLoop;
 using UnityEngine.Tilemaps;
 
 namespace Nastrond {
@@ -11,9 +9,7 @@ namespace Nastrond {
 
         [SerializeField] List<TileBase> solidTiles;
         [SerializeField] Tilemap tilemap;
-
-
-
+        
         public void Bake() {
             //Clean previous entity
             List<Entity> tmpEntities = FindObjectsOfType<Entity>().ToList();
@@ -45,22 +41,16 @@ namespace Nastrond {
 
             //Build graph
             //Create new graph
-            GameObject[,] graph;
-
-            graph = new GameObject[graphWidth, graphHeight];
-
-            Debug.Log(tilemap.cellBounds.xMax);
-            Debug.Log(Mathf.Abs(tilemap.cellBounds.yMin - tilemap.cellBounds.yMax));
+            GameObject[,] graph = new GameObject[graphWidth, graphHeight];
             
             int indexX = 0;
             int indexY = 0;
-            foreach(var pos in tilemap.cellBounds.allPositionsWithin) {
+            foreach(Vector3Int pos in tilemap.cellBounds.allPositionsWithin) {
                 Vector3Int localPlace = new Vector3Int(pos.x, pos.y, pos.z);
                 Vector3 place = tilemap.CellToWorld(localPlace);
                 if(tilemap.HasTile(localPlace)) {
                     if(!solidTiles.Contains(tilemap.GetTile(localPlace))) {
-                        GameObject tmp = new GameObject();
-                        tmp.name = "Node[" + indexX + "." + indexY + "]";
+                        GameObject tmp = new GameObject {name = "Node[" + indexX + "." + indexY + "]"};
                         tmp.AddComponent<GraphNodeComponent>();
                         tmp.GetComponent<GraphNodeComponent>().cost = 1;
                         tmp.GetComponent<GraphNodeComponent>().neighbors = new List<GameObject>();
@@ -68,6 +58,8 @@ namespace Nastrond {
                         tmp.transform.position = tilemap.GetCellCenterWorld(localPlace);
                         tmp.GetComponent<GraphNodeComponent>().position = tmp.transform;
                         graph[indexX, indexY] = tmp;
+
+                        tmp.transform.SetParent(transform);
                     }
                 }
 
@@ -76,7 +68,6 @@ namespace Nastrond {
                     indexX = 0;
                     indexY++;
                 }
-                
             }
 
             BoundsInt bounds = new BoundsInt(-1, -1, 0, 3, 3, 1);
