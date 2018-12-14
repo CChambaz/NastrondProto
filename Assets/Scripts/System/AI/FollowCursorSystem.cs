@@ -32,12 +32,15 @@ namespace Nastrond
         void Update()
         {
             if (Input.GetButtonDown("Fire1")) {
+                Vector2 v2 = Input.mousePosition;
+                v2 = Camera.main.ScreenToWorldPoint(v2);
+
                 float time = Time.realtimeSinceStartup;
                 for (int index = 0; index < pathComponents.Count; index++) {
                     PathComponent pathComponent = pathComponents[index];
                     Transform transformComponent = transformComponents[index];
 
-                    pathComponent.nodes = aStarSystem.GetPath(transformComponent, Vector2.zero);
+                    pathComponent.nodes = aStarSystem.GetPath(transformComponent, v2);
                     pathComponent.index = 0;
                 }
                 Debug.Log("time = " + (Time.realtimeSinceStartup - time));

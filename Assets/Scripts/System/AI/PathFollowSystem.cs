@@ -45,7 +45,7 @@ namespace Nastrond
 
                 //Test distance
                 if (Vector2.Distance(transformComponent.position,
-                        pathComponent.nodes[pathComponent.index].position.position) < 0.1f) {
+                        pathComponent.nodes[pathComponent.index].position.position) < 0.2f) {
                     pathComponent.index++;
                     if (pathComponent.index >= pathComponent.nodes.Length) {
                         pathComponent.index = 0;

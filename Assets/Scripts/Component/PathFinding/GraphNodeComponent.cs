@@ -7,9 +7,10 @@ namespace Nastrond {
         public List<GameObject> neighbors;
         public Transform position;
 
-        void OnDrawGizmos() {
+        void OnDrawGizmosSelected()
+        {
             Gizmos.color = new Color(1.0f, 1.0f, 1.0f, 0.2f);
-            foreach (GameObject neighbor in neighbors) {
+            foreach(GameObject neighbor in neighbors) {
                 Gizmos.DrawLine(transform.position, neighbor.transform.position);
             }
         }
