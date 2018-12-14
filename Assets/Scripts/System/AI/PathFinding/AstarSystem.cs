@@ -11,34 +11,43 @@ namespace Nastrond {
         List<Transform> transformComponents;
 
         // Use this for initialization
-        void Start() {
+        void Start()
+        {
+            graphNodeComponents = new List<GraphNodeComponent>();
             transformComponents = new List<Transform>();
 
             List<GameObject> tmpEntities = GetEntities();
 
             foreach(GameObject e in tmpEntities) {
-                if(e.GetComponent<GraphNodeComponent>()) {
+                if(e.GetComponent<GraphNodeComponent>() != null) {
                     transformComponents.Add(e.transform);
                     graphNodeComponents.Add(e.GetComponent<GraphNodeComponent>());
                 }
             }
         }
 
-        public void GetPath(Transform transformOrigin, Transform transformTarget) {
-            GraphNodeComponent nodeOrigin = GetClosestNodeComponent(transformOrigin);
-            GraphNodeComponent nodeTarget = GetClosestNodeComponent(transformTarget);
+        public GraphNodeComponent[] GetPath(Transform transformOrigin, Transform transformTarget) {
+            GraphNodeComponent nodeOrigin = GetClosestNodeComponent(transformOrigin.position);
+            GraphNodeComponent nodeTarget = GetClosestNodeComponent(transformTarget.position);
 
-            //TODO faire du a* pour trouver le chemin le plus court
+            return FindShortestPath(nodeOrigin, nodeTarget);
         }
 
-        GraphNodeComponent GetClosestNodeComponent(Transform t) {
+        public GraphNodeComponent[] GetPath(Transform transformOrigin, Vector2 positionTarget) {
+            GraphNodeComponent nodeOrigin = GetClosestNodeComponent(transformOrigin.position);
+            GraphNodeComponent nodeTarget = GetClosestNodeComponent(positionTarget);
+
+            return FindShortestPath(nodeOrigin, nodeTarget);
+        }
+
+        GraphNodeComponent GetClosestNodeComponent(Vector2 p) {
             float minDistance = float.MaxValue;
             int indexMin = 0;
 
             for (int index = 0; index < transformComponents.Count; index++) {
                 Transform transformComponent = transformComponents[index];
 
-                float currentDistance = Vector2.Distance(t.position, transformComponent.position);
+                float currentDistance = Vector2.Distance(p, transformComponent.position);
 
                 if (!(currentDistance < minDistance)) continue;
 
@@ -65,19 +74,19 @@ namespace Nastrond {
 
             GraphNodeComponent current = null;
 
-            while (openNode.Count > 0) {
-                current = openNode.First;
+            while(openNode.Count > 0) {
+                current = openNode.Dequeue();
 
-                if (current == nodeTarget) {
+                if(current == nodeTarget) {
                     break;
                 }
 
-                foreach (GameObject neighbor in current.neighbors) {
+                foreach(GameObject neighbor in current.neighbors) {
                     GraphNodeComponent currentNeighbor = neighbor.GetComponent<GraphNodeComponent>();
                     float newCost = costSoFar[current] + current.cost;
 
-                    if (!costSoFar.ContainsKey(current) || newCost < costSoFar[current]) {
-                        costSoFar[current] = newCost;
+                    if(!costSoFar.ContainsKey(currentNeighbor) || newCost < costSoFar[currentNeighbor]) {
+                        costSoFar[currentNeighbor] = newCost;
                         float priority = newCost + Vector2.Distance(transformComponents[graphNodeComponents.IndexOf(currentNeighbor)].position, transformComponents[graphNodeComponents.IndexOf(current)].position);
                         openNode.Enqueue(currentNeighbor, priority);
                         cameFrom[currentNeighbor] = current;

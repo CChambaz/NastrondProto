@@ -24,7 +24,6 @@ namespace Nastrond {
 
         public void AddComponentToManager(Component c) {
             components.Add(c);
-            Debug.Log(components.Count);
         }
     }
 }

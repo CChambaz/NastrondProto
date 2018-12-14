@@ -6,6 +6,7 @@ namespace Nastrond {
     public class GraphNodeComponent : Component {
         public float cost;
         public List<GameObject> neighbors;
+        public Transform position;
 
         void OnDrawGizmos() {
             foreach (GameObject neighbor in neighbors) {
