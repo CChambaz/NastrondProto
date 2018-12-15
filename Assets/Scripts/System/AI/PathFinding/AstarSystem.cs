@@ -5,23 +5,26 @@ using UnityEngine;
 namespace Nastrond {
     public class AstarSystem : System {
 
-        List<GraphNodeComponent> graphNodeComponents;
-        List<Transform> transformComponents;
+        GraphNodeComponent[] graphNodeComponents;
+        Transform[] transformComponents;
 
         // Use this for initialization
         void Start()
         {
-            graphNodeComponents = new List<GraphNodeComponent>();
-            transformComponents = new List<Transform>();
+            List<GraphNodeComponent> tmpGraphNodeComponents = new List<GraphNodeComponent>();
+            List<Transform> tmpTransformComponents = new List<Transform>();
 
             List<GameObject> tmpEntities = GetEntities();
 
             foreach(GameObject e in tmpEntities) {
                 if(e.GetComponent<GraphNodeComponent>() != null) {
-                    transformComponents.Add(e.transform);
-                    graphNodeComponents.Add(e.GetComponent<GraphNodeComponent>());
+                    tmpTransformComponents.Add(e.transform);
+                    tmpGraphNodeComponents.Add(e.GetComponent<GraphNodeComponent>());
                 }
             }
+
+            transformComponents = tmpTransformComponents.ToArray();
+            graphNodeComponents = tmpGraphNodeComponents.ToArray();
         }
 
         public GraphNodeComponent[] GetPath(Transform transformOrigin, Transform transformTarget) {
@@ -42,7 +45,7 @@ namespace Nastrond {
             float minDistance = float.MaxValue;
             int indexMin = 0;
 
-            for (int index = 0; index < transformComponents.Count; index++) {
+            for (int index = 0; index < transformComponents.Length; index++) {
                 Transform transformComponent = transformComponents[index];
 
                 float currentDistance = Vector2.Distance(p, transformComponent.position);

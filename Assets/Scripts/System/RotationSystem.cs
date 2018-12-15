@@ -5,27 +5,30 @@ using UnityEngine;
 namespace Nastrond {
     public class RotationSystem : System {
 
-        List<RotationComponent> rotationSpriteComponents;
-        List<Transform> transformComponents;
+        RotationComponent[] rotationSpriteComponents;
+        Transform[] transformComponents;
 
         // Use this for initialization
         void Start() {
-            rotationSpriteComponents = new List<RotationComponent>();
-            transformComponents = new List<Transform>();
+            List<RotationComponent> tmpRotationSpriteComponents = new List<RotationComponent>();
+            List<Transform> tmpTransformComponents = new List<Transform>();
 
             List<GameObject> tmpEntities = GetEntities();
 
             foreach(GameObject e in tmpEntities) {
                 if(e.GetComponent<RotationComponent>()) {
-                    transformComponents.Add(e.transform);
-                    rotationSpriteComponents.Add(e.GetComponent<RotationComponent>());
+                    tmpTransformComponents.Add(e.transform);
+                    tmpRotationSpriteComponents.Add(e.GetComponent<RotationComponent>());
                 }
             }
+
+            rotationSpriteComponents = tmpRotationSpriteComponents.ToArray();
+            transformComponents = tmpTransformComponents.ToArray();
         }
 
         // Update is called once per frame
         void Update() {
-            for (int index = 0; index < rotationSpriteComponents.Count; index++) {
+            for (int index = 0; index < rotationSpriteComponents.Length; index++) {
                 RotationComponent rotationComponent = rotationSpriteComponents[index];
                 Transform transformComponent = transformComponents[index];
 

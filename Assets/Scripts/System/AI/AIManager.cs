@@ -115,8 +115,6 @@ namespace Nastrond {
             }
 
         }
-
-
     }
 
 #if UNITY_EDITOR

@@ -6,24 +6,27 @@ namespace Nastrond
 {
     public class FollowCursorSystem : System
     {
-        List<PathComponent> pathComponents;
-        List<Transform> transformComponents;
+        PathComponent[] pathComponents;
+        Transform[] transformComponents;
 
         AstarSystem aStarSystem;
 
         void Start()
         {
-            pathComponents = new List<PathComponent>();
-            transformComponents = new List<Transform>();
+            List<PathComponent> tmpPathComponents = new List<PathComponent>();
+            List<Transform> tmpTransformComponents = new List<Transform>();
 
             List<GameObject> tmpEntities = GetEntities();
 
             foreach(GameObject e in tmpEntities) {
                 if(e.GetComponent<PathComponent>() != null) {
-                    pathComponents.Add(e.GetComponent<PathComponent>());
-                    transformComponents.Add(e.GetComponent<Transform>());
+                    tmpPathComponents.Add(e.GetComponent<PathComponent>());
+                    tmpTransformComponents.Add(e.GetComponent<Transform>());
                 }
             }
+
+            pathComponents = tmpPathComponents.ToArray();
+            transformComponents = tmpTransformComponents.ToArray();
             
             aStarSystem = FindObjectOfType<AstarSystem>();
         }
@@ -36,7 +39,7 @@ namespace Nastrond
                 v2 = Camera.main.ScreenToWorldPoint(v2);
 
                 float time = Time.realtimeSinceStartup;
-                for (int index = 0; index < pathComponents.Count; index++) {
+                for (int index = 0; index < pathComponents.Length; index++) {
                     PathComponent pathComponent = pathComponents[index];
                     Transform transformComponent = transformComponents[index];
 

@@ -4,27 +4,30 @@ using UnityEngine;
 namespace Nastrond {
     public class MotionSystem:System {
 
-        List<MotionComponent> motionComponents;
-        List<Transform> transformComponents;
+        MotionComponent[] motionComponents;
+        Transform[] transformComponents;
 
         // Use this for initialization
         void Start() {
-            motionComponents = new List<MotionComponent>();
-            transformComponents = new List<Transform>();
+            List<MotionComponent> tmpMotionComponents = new List<MotionComponent>();
+            List<Transform> tmpTransformComponents = new List<Transform>();
 
             List<GameObject> tmpEntities = GetEntities();
 
             foreach (GameObject e in tmpEntities) {
                 if (e.GetComponent<MotionComponent>() != null) {
-                    transformComponents.Add(e.transform);
-                    motionComponents.Add(e.GetComponent<MotionComponent>());
+                    tmpTransformComponents.Add(e.transform);
+                    tmpMotionComponents.Add(e.GetComponent<MotionComponent>());
                 }
             }
+
+            motionComponents = tmpMotionComponents.ToArray();
+            transformComponents = tmpTransformComponents.ToArray();
         }
 
         // Update is called once per frame
         void Update() {
-            for (int index = 0; index < motionComponents.Count; index++) {
+            for (int index = 0; index < motionComponents.Length; index++) {
                 MotionComponent motionComponent = motionComponents[index];
                 Transform trans = transformComponents[index];
                 trans.position += Time.deltaTime * (Vector3) motionComponent.direction.normalized * motionComponent.speed;
