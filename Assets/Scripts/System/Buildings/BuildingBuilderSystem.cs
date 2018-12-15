@@ -27,21 +27,21 @@ namespace Nastrond {
                     TileBase currentTile = tilemap.GetTile(localPlace);
 
                     if (currentTile == houseLvl1) {
-                        GameObject tmp = new GameObject("houseLvl1" + localPlace);
+                        GameObject tmp = new GameObject("HouseLvl1[" + localPlace.x + ","+localPlace.y+"]");
                         tmp.transform.position = tilemap.GetCellCenterWorld(localPlace);
                         tmp.transform.parent = transform;
                         tmp.AddComponent<DwarfsSlots>();
                         tmp.GetComponent<DwarfsSlots>().buildingType = DwarfsSlots.BuildingType.DWELLING;
                         tmp.GetComponent<DwarfsSlots>().maxNumberSlots = 3;
                     } else if (currentTile == houseLvl2) {
-                        GameObject tmp = new GameObject("houseLvl2" + localPlace);
+                        GameObject tmp = new GameObject("HouseLvl2[" + localPlace.x + ","+localPlace.y+"]");
                         tmp.transform.position = tilemap.GetCellCenterWorld(localPlace);
                         tmp.transform.parent = transform;
                         tmp.AddComponent<DwarfsSlots>();
                         tmp.GetComponent<DwarfsSlots>().buildingType = DwarfsSlots.BuildingType.DWELLING;
                         tmp.GetComponent<DwarfsSlots>().maxNumberSlots = 5;
                     } else if (currentTile == houseLvl3) {
-                        GameObject tmp = new GameObject("houseLvl3" + localPlace);
+                        GameObject tmp = new GameObject("HouseLvl3[" + localPlace.x + ","+localPlace.y+"]");
                         tmp.transform.position = tilemap.GetCellCenterWorld(localPlace);
                         tmp.transform.parent = transform;
                         tmp.AddComponent<DwarfsSlots>();
