@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Nastrond
 {
-    public enum RessourceType
+    public enum ResourceType
     {
         COAL,
         STONE,
@@ -14,6 +14,6 @@ namespace Nastrond
     {
         public int amount;
         public int maxCapacity;
-        public RessourceType ressourceType = RessourceType.COAL;
+        public ResourceType resourceType = ResourceType.COAL;
     }
 }

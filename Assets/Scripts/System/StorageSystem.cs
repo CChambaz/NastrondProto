@@ -30,11 +30,11 @@ namespace Nastrond
             int totalAmount = 0;
             for (int index = 0; index < inventoryComponentList.Count; index++)
             {
-                Debug.Log(inventoryComponentList[index].ressourceType);
+                Debug.Log("Building + Dwarf resources : " + inventoryComponentList[index].resourceType + " amount : " + inventoryComponentList[index].amount);
                 totalAmount += inventoryComponentList[index].amount;
             }
 
-            Debug.Log(totalAmount);
+            Debug.Log("total resources amount : " + totalAmount);
         }
     }
 }
