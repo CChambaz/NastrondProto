@@ -8,33 +8,37 @@ namespace Nastrond
 {
     public class PathFollowSystem : System
     {
-        List<PathComponent> pathComponents;
-        List<MotionComponent> motionComponents;
-        List<Transform> transformComponents;
+        PathComponent[] pathComponents;
+        MotionComponent[] motionComponents;
+        Transform[] transformComponents;
 
         // Start is called before the first frame update
         void Start()
         {
-            pathComponents = new List<PathComponent>();
-            motionComponents = new List<MotionComponent>();
-            transformComponents = new List<Transform>();
+            List<PathComponent> tmpPathComponents = new List<PathComponent>();
+            List<MotionComponent> tmpMotionComponents = new List<MotionComponent>();
+            List<Transform> tmpTransformComponents = new List<Transform>();
 
             List<GameObject> tmpEntities = GetEntities();
 
             foreach(GameObject e in tmpEntities) {
                 if(e.GetComponent<MotionComponent>() != null && 
                    e.GetComponent<PathComponent>() != null) {
-                    motionComponents.Add(e.GetComponent<MotionComponent>());
-                    pathComponents.Add(e.GetComponent<PathComponent>());
-                    transformComponents.Add(e.transform);
+                    tmpMotionComponents.Add(e.GetComponent<MotionComponent>());
+                    tmpPathComponents.Add(e.GetComponent<PathComponent>());
+                    tmpTransformComponents.Add(e.transform);
                 }
             }
+
+            pathComponents = tmpPathComponents.ToArray();
+            motionComponents = tmpMotionComponents.ToArray();
+            transformComponents = tmpTransformComponents.ToArray();
         }
 
         // Update is called once per frame
         void Update()
         {
-            for (int index = 0; index < motionComponents.Count; index++) {
+            for (int index = 0; index < motionComponents.Length; index++) {
                 MotionComponent motionComponent = motionComponents[index];
                 PathComponent pathComponent = pathComponents[index];
                 Transform transformComponent = transformComponents[index];
