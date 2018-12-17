@@ -6,14 +6,13 @@ namespace Nastrond
 {
     public enum ResourceType
     {
-        COAL,
-        STONE,
-        IRON
+        FOOD,
+        STONE
     }
     public class InventoryComponent : Component
     {
         public int amount;
         public int maxCapacity;
-        public ResourceType resourceType = ResourceType.COAL;
+        public ResourceType resourceType = ResourceType.FOOD;
     }
 }
