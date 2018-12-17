@@ -27,23 +27,14 @@ namespace Nastrond
         // Update is called once per frame
         void Update()
         {
-            int totalAmountFood = 0;
-
-            int totalAmountStone = 0;
+            int totalAmount = 0;
 
             for (int index = 0; index < inventoryComponentList.Count; index++)
             {
-                if (inventoryComponentList[index].resourceType == ResourceType.FOOD)
-                {
-                    totalAmountFood += inventoryComponentList[index].amount;
-                }
-                else
-                {
-                    totalAmountStone += inventoryComponentList[index].amount;
-                }
+                Debug.Log("resource type of this inventory : " + inventoryComponentList[index].resourceType);
+                totalAmount += inventoryComponentList[index].amount;
             }
-            Debug.Log("total food amount : " + totalAmountFood);
-            Debug.Log("total stone amount : " + totalAmountStone);
+            Debug.Log("total resource amount : " + totalAmount);
         }
     }
 }

@@ -1,11 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Nastrond
 {
+
     public class ResourceCounterSystem : System
     {
+        public Text StoneText;
+        public Text FoodText;
 
         List<InventoryComponent> inventoryComponentList;
 
@@ -27,11 +31,26 @@ namespace Nastrond
         // Update is called once per frame
         void Update()
         {
+            int totalAmountFood = 0;
+
+            int totalAmountStone = 0;
+
             for (int index = 0; index < inventoryComponentList.Count; index++)
             {
-                Debug.Log("Resource is " + inventoryComponentList[index].resourceType);
-                Debug.Log("total amount is " + inventoryComponentList[index].amount);
+                if (inventoryComponentList[index].resourceType == ResourceType.FOOD)
+                {
+                    totalAmountFood += inventoryComponentList[index].amount;
+                }
+                else
+                {
+                    totalAmountStone += inventoryComponentList[index].amount;
+                }
             }
+
+            StoneText.text = "Stone amount : " + totalAmountStone;
+            FoodText.text = "Food amount : " + totalAmountFood;
+            Debug.Log("total food amount : " + totalAmountFood);
+            Debug.Log("total stone amount : " + totalAmountStone);
         }
     }
 }
