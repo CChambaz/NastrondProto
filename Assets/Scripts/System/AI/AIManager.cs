@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEditor;
@@ -8,15 +8,20 @@ using UnityEngine.Tilemaps;
 namespace Nastrond {
     public class AIManager : System {
 
-        [SerializeField] List<TileBase> solidTiles;
+        [Serializable]
+        struct TileCost
+        {
+            public TileBase tileBase;
+            public short cost;
+        }
+
+        [SerializeField] TileBase[] solidTiles;
+        [SerializeField] TileCost[] costTiles;
         [SerializeField] Tilemap tilemap;
-
-
-
+        [SerializeField] Tilemap buildingTilemap;
+        
         public void Bake() {
             //Clean previous entity
-            List<GraphNodeComponent> previousGraphNodeComponents = new List<GraphNodeComponent>();
-
             List<Entity> tmpEntities = FindObjectsOfType<Entity>().ToList();
             List<GameObject> entities = new List<GameObject>();
 
@@ -39,56 +44,46 @@ namespace Nastrond {
             }
             
             //Get bounds
-            int graphWidth = 0;
-            int graphHeight = 0;
-            Vector2Int graphOrigin = Vector2Int.zero; //Bottom left corner
+            int graphWidth = Mathf.Abs(tilemap.cellBounds.xMin - tilemap.cellBounds.xMax);
+            int graphHeight = Mathf.Abs(tilemap.cellBounds.yMin - tilemap.cellBounds.yMax);
 
             tilemap.CompressBounds();
 
-            graphWidth = tilemap.size.x;
-            graphHeight = tilemap.size.y;
-
-            graphOrigin = new Vector2Int(tilemap.origin.x, tilemap.origin.y);
-
             //Build graph
             //Create new graph
-            GameObject[,] graph;
-
-            graph = new GameObject[graphWidth, graphHeight];
-
-            int nbNodePerTile = 1;
-
-            //Assign all existing tile
-            for(int x = 0;x < graphWidth;x++) {
-                for(int y = 0;y < graphHeight;y++) {
-
-                    float currentCost = 0;
-
-                    bool isWalkableTile = false;
-
-                    //Get the tile associated to the node
-                    Vector3 nodePos = new Vector3(graphOrigin.x, graphOrigin.y, 0) + new Vector3(
-                                      x ,
-                                      y, 0);
-
-                    Vector3Int tilePos = tilemap.LocalToCell(new Vector3(nodePos.x, nodePos.y, 0));
-                    
-
-                    if(tilemap.HasTile(tilePos)) {
-                        if(!solidTiles.Contains(tilemap.GetTile(tilePos))) {
-                            GameObject tmp = new GameObject();
-                            tmp.name = "Node[" + x + "." + y + "]";
-                            tmp.AddComponent<GraphNodeComponent>();
-                            tmp.GetComponent<GraphNodeComponent>().cost = 1;
-                            tmp.GetComponent<GraphNodeComponent>().neighbors = new List<GameObject>();
-                            tmp.AddComponent<Entity>();
-                            tmp.transform.position = new Vector2(tilePos.x + 0.5f, tilePos.y + 0.5f);
-
-                            //GameObject instance = GameObject.Instantiate(tmp, new Vector2(x, y), Quaternion.identity);
-
-                            graph[x, y] = tmp;
+            GameObject[,] graph = new GameObject[graphWidth, graphHeight];
+            
+            int indexX = 0;
+            int indexY = 0;
+            foreach(Vector3Int pos in tilemap.cellBounds.allPositionsWithin) {
+                Vector3Int localPlace = new Vector3Int(pos.x, pos.y, pos.z);
+                Vector3 place = tilemap.CellToWorld(localPlace);
+                if(tilemap.HasTile(localPlace) && ! buildingTilemap.HasTile(localPlace)) {
+                    if(!solidTiles.Contains(tilemap.GetTile(localPlace))) {
+                        GameObject tmp = new GameObject {name = "Node[" + indexX + "." + indexY + "]"};
+                        tmp.AddComponent<GraphNodeComponent>();
+                        int cost = 0;
+                        foreach (TileCost costTile in costTiles) {
+                            if (costTile.tileBase == tilemap.GetTile(localPlace)) {
+                                cost = costTile.cost;
+                            }
                         }
+
+                        tmp.GetComponent<GraphNodeComponent>().cost = cost;
+                        tmp.GetComponent<GraphNodeComponent>().neighbors = new List<GameObject>();
+                        tmp.AddComponent<Entity>();
+                        tmp.transform.position = tilemap.GetCellCenterWorld(localPlace);
+                        tmp.GetComponent<GraphNodeComponent>().position = tmp.transform;
+                        graph[indexX, indexY] = tmp;
+
+                        tmp.transform.SetParent(transform);
                     }
+                }
+
+                indexX++;
+                if (indexX >= graph.GetLength((0))) {
+                    indexX = 0;
+                    indexY++;
                 }
             }
 
@@ -98,7 +93,7 @@ namespace Nastrond {
             for(int x = 0;x < graphWidth;x++) {
                 for(int y = 0;y < graphHeight;y++) {
                     //If is a walkable tile => Add neighbors
-                    if(graph[x, y] == null) continue;
+                    if (graph[x, y] == null) continue;
 
                     foreach(Vector3Int b in bounds.allPositionsWithin) {
                         //Check that b is not himself as a node
@@ -120,8 +115,6 @@ namespace Nastrond {
             }
 
         }
-
-
     }
 
 #if UNITY_EDITOR

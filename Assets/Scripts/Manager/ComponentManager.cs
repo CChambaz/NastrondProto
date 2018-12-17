@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 namespace Nastrond {
@@ -24,7 +23,6 @@ namespace Nastrond {
 
         public void AddComponentToManager(Component c) {
             components.Add(c);
-            Debug.Log(components.Count);
         }
     }
 }
