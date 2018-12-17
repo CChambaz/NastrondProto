@@ -5,10 +5,16 @@ using UnityEngine.EventSystems;
 
 public class DragNDropSystem : MonoBehaviour,IDragHandler,IEndDragHandler
 {
- 
+
+    public GameObject buildingSelected;
+    
+
     public void OnDrag(PointerEventData eventData)
     {
-        gameObject.GetComponentsInChildren
+        if(buildingSelected!=null)
+        {
+
+        }
     }
 
     public void OnEndDrag(PointerEventData eventData)
