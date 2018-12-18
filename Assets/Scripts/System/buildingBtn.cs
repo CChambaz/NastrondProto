@@ -6,13 +6,12 @@ using UnityEngine.Tilemaps;
 public class BuildingBtn : MonoBehaviour
 {
     
-    public GameObject buildingPref;
-    public GameObject tmpBuildingRef;
+   
+    private GameObject tmpBuildingRef;
     public GridLayout gridLayout;
     private Coroutine dragCoroutine;
     private bool actionCancelled=false;
     private bool actionValidate = false;
-    private bool actionsInProgress = false;
     private DragNDropSystem dragNDrop;
 
     enum ValidationState
@@ -29,38 +28,33 @@ public class BuildingBtn : MonoBehaviour
     {
         dragNDrop = FindObjectOfType<DragNDropSystem>();
     }
-    public void SelectBuilding()
+    public void SelectBuilding(GameObject buildingRef)
     {
-        dragCoroutine=StartCoroutine(OnDragBuilding());
+        tmpBuildingRef = buildingRef;
+        if (dragCoroutine==null)
+            dragCoroutine=StartCoroutine(OnDragBuilding());
     }
     public void Update()
     {
-        if (Input.GetMouseButtonDown(0) && dragCoroutine != null && vstate == ValidationState.VALID&&actionsInProgress)
+        if (Input.GetMouseButtonDown(0) && dragCoroutine != null && vstate == ValidationState.VALID)
         {
-            actionValidate = true;
-           
+           actionValidate = true; 
         }
 
         if (Input.GetMouseButtonDown(1)&&dragCoroutine!=null)
         {
-
             actionCancelled = true;
-            
         }
     }
  
     IEnumerator OnDragBuilding()
     {
-        
         Vector3 mousePositionInWorldPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         GameObject tmpBuilding;
-        tmpBuilding = Instantiate(buildingPref,mousePositionInWorldPoint,Quaternion.identity);
-        tmpBuildingRef=tmpBuilding;
-        actionsInProgress = true;
+        tmpBuilding = Instantiate(tmpBuildingRef,mousePositionInWorldPoint,Quaternion.identity);
+
         while (true)
         {
-
-            
             mousePositionInWorldPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             float x = (float)System.Math.Round(mousePositionInWorldPoint.x * 2f, System.MidpointRounding.AwayFromZero)/ 2f;//Mathf.RoundToInt(mousePositionInWorldPoint.x);
             float y = (float)System.Math.Round(mousePositionInWorldPoint.y * 2f, System.MidpointRounding.AwayFromZero)/2f-0.25f;
@@ -70,40 +64,28 @@ public class BuildingBtn : MonoBehaviour
            
             tmpBuilding.transform.position = gridLayout.CellToLocalInterpolated(cellPosition);
            
-
             if (dragNDrop.cityBuildings != null)
             {
                 BuildingLimits tmpBuildingLimit = tmpBuilding.GetComponent<BuildingLimits>();
                 bool collide=false;
                 foreach (GameObject item in dragNDrop.cityBuildings)
                 {
-
                     BuildingLimits itemLimit = item.GetComponent<BuildingLimits>();
-                   if(isColliding(itemLimit,tmpBuildingLimit))
-                        {
-                            // collision !
-                            collide = true;
-                            Debug.Log("Invalid");
-                        }
-                   
-
-                    
-                  
+                    if(isColliding(itemLimit,tmpBuildingLimit))
+                    {
+                        // collision !
+                        collide = true;
+                        Debug.Log("Invalid");
+                    }
                 }
                 if(collide)
                     vstate = ValidationState.INVALID;
                 else
                     vstate = ValidationState.VALID;
-                yield return new WaitForEndOfFrame();
             }
             
             yield return new WaitForEndOfFrame();
-
-
-
             
-
-
             if(actionCancelled)
             {
                 Destroy(tmpBuilding);
@@ -113,13 +95,11 @@ public class BuildingBtn : MonoBehaviour
 
             if (actionValidate)
             {
-                dragNDrop.AddCityBuilding(tmpBuildingRef);
+                dragNDrop.AddCityBuilding(tmpBuilding);
+                tmpBuilding = Instantiate(tmpBuildingRef);
                 actionValidate = false;
-                break;
             }
-          
         }
-        actionsInProgress = false;
         dragCoroutine = null;
     }
 
@@ -134,10 +114,7 @@ public class BuildingBtn : MonoBehaviour
 
         float item2HorizontalHalfSize = (item2.GetTransformR().position - item2.GetCenter().position).magnitude;
         float item2VerticalHalfSize = (item2.GetCenter().position- item2.GetTransformD().position).magnitude;
-
-        //Debug.Log("distance : " + centersDistance / 2 + " | midsize : " + midSize + " | " + midSize2);
-        Debug.Log("x pos check : " + (item2.GetCenter().position.x != item1.GetCenter().position.x) + " | horizontal check : " + (item2HorizontalHalfSize + item1HorizontalHalfSize > centersDistance * 2) + " | vertical check : " + (item1VerticalHalfSize + item2VerticalHalfSize > centersDistance * 2));
-
+        
         if (item2.GetCenter().position.x != item1.GetCenter().position.x)
             return item2HorizontalHalfSize + item1HorizontalHalfSize > centersDistance * 2;
         else
