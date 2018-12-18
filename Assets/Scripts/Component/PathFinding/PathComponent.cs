@@ -5,6 +5,8 @@ namespace Nastrond {
        public GraphNodeComponent[] nodes;
        public int index = 0;
 
+       public DwarfsSlots dwarfsSlotDestination;
+
        void OnDrawGizmos()
        {
            Gizmos.color = Color.cyan;

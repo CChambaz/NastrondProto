@@ -55,6 +55,9 @@ namespace Nastrond
                         pathComponent.index = 0;
                         pathComponent.nodes = new GraphNodeComponent[0];
                         motionComponent.direction = Vector2.zero;
+                        if (pathComponent.dwarfsSlotDestination != null) {
+                            pathComponent.dwarfsSlotDestination.dwarfsAlreadyIn++;
+                        }
                         continue;
                     }
                 }

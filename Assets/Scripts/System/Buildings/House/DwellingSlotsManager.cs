@@ -9,51 +9,57 @@ namespace Nastrond
         public DwarfsSlots[] dwellingsSlots;
         public DwellingSlotIndexComponent[] dwellingSlotIndexComponents;
 
-        private void Start()
+        private void Awake()
         {
             dwellingsSlots = new DwarfsSlots[0];
             dwellingSlotIndexComponents = new DwellingSlotIndexComponent[0];
         }
 
-        public bool AttributeDwellingToDwarf(DwellingSlotIndexComponent dwellingSlotIndexComponent)
-        {
-            for (int i = 0; i < dwellingsSlots.Length; i++)
-            {
-                if (dwellingsSlots[i].attributedDwarfsNumber < dwellingsSlots[i].maxNumberSlots)
-                {
-                    dwellingsSlots[i].attributedDwarfsNumber++;
-                    dwellingSlotIndexComponent.dwarfsSlots = dwellingsSlots[i];
+        public bool AttributeDwellingToDwarf(DwellingSlotIndexComponent dwellingSlotIndexComponent) {
+            foreach (DwarfsSlots dwellingSlot in dwellingsSlots) {
+                if (dwellingSlot.attributedDwarfsNumber >= dwellingSlot.maxNumberSlots) {
+                    continue;
+                }
 
-                    for (int j = 0; j < dwellingsSlots.Length; j++)
-                    {
-                        if (dwellingsSlots[i].attributedDwellingsSlotIndexComponent[j] != null)
-                        {
-                            dwellingsSlots[i].attributedDwellingsSlotIndexComponent[j] = dwellingSlotIndexComponent;
-                            break;
-                        }
+                dwellingSlot.attributedDwarfsNumber++;
+                dwellingSlotIndexComponent.dwarfsSlots = dwellingSlot;
+
+                for (int j = 0; j < dwellingSlot.maxNumberSlots; j++)
+                {
+                    if (dwellingSlot.attributedDwellingsSlotIndexComponent[j] != null) {
+                        continue;
                     }
 
-                    return true;
+                    dwellingSlot.attributedDwellingsSlotIndexComponent[j] = dwellingSlotIndexComponent;
+                    break;
                 }
+
+                return true;
             }
+
             return false;
         }
 
         public bool newDwarf(DwellingSlotIndexComponent dwellingSlotIndexComponent)
         {
             IncreaseDwellingSlotIndexComponentsSizeAndAttribute(dwellingSlotIndexComponent);
-
-            if (!AttributeDwellingToDwarf(dwellingSlotIndexComponent))
-            {
-                return false;
-            }
-
-            return true;
+            
+            return AttributeDwellingToDwarf(dwellingSlotIndexComponent);
         }
 
         public void newDwelling(DwarfsSlots dwarfsSlots)
         {
             IncreaseDwellingSlotsComponentSizeAndAttribute(dwarfsSlots);
+
+            foreach(DwellingSlotIndexComponent dwellingSlotIndexComponent in dwellingSlotIndexComponents) {
+                if (dwellingSlotIndexComponent.dwarfsSlots != null) {
+                    continue;
+                }
+
+                if(!AttributeDwellingToDwarf(dwellingSlotIndexComponent)) {
+                    break;
+                }
+            }
         }
 
         private void IncreaseDwellingSlotIndexComponentsSizeAndAttribute(DwellingSlotIndexComponent dwellingSlotIndexComponent)
@@ -67,7 +73,7 @@ namespace Nastrond
 
             tmpDwellingSlotIndexComponents[tmpDwellingSlotIndexComponents.Length - 1] = dwellingSlotIndexComponent;
 
-            dwellingSlotIndexComponents = tmpDwellingSlotIndexComponents;
+            dwellingSlotIndexComponents = tmpDwellingSlotIndexComponents;;
         }
 
         private void IncreaseDwellingSlotsComponentSizeAndAttribute(DwarfsSlots dwarfsSlots)
