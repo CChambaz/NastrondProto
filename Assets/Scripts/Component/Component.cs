@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Nastrond {
     public class Component : MonoBehaviour{
-        void Start() {
+        protected void Start() {
             ComponentManager.Instance.AddComponentToManager(this);
         }
     }
