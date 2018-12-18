@@ -70,13 +70,22 @@ namespace Nastrond
 
         public bool AttributeDwellingToDwarf(DwellingSlotIndexComponent dwellingSlotIndexComponent)
         {
-            for (int i = 0; i
-                            < dwellingsSlots.Length; i++)
+            for (int i = 0; i < dwellingsSlots.Length; i++)
             {
                 if (dwellingsSlots[i].attributedDwarfsNumber < dwellingsSlots[i].maxNumberSlots)
                 {
                     dwellingsSlots[i].attributedDwarfsNumber++;
                     dwellingSlotIndexComponent.dwarfsSlots = dwellingsSlots[i];
+
+                    for (int j = 0; j < dwellingsSlots.Length; j++)
+                    {
+                        if (dwellingsSlots[i].attributedDwellingsSlotIndexComponent[j] != null)
+                        {
+                            dwellingsSlots[i].attributedDwellingsSlotIndexComponent[j] = dwellingSlotIndexComponent;
+                            break;
+                        }
+                    }
+
                     return true;
                 }
             }
@@ -91,6 +100,7 @@ namespace Nastrond
             {
                 return false;
             }
+
             return true;
         }
 
