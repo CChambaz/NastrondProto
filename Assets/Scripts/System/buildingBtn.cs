@@ -115,7 +115,10 @@ public class BuildingBtn : MonoBehaviour
         float item2HorizontalHalfSize = (item2.GetTransformR().position - item2.GetCenter().position).magnitude;
         float item2VerticalHalfSize = (item2.GetCenter().position- item2.GetTransformD().position).magnitude;
         
-        if (item2.GetCenter().position.x != item1.GetCenter().position.x)
+        /**
+         * Attention aux nombres magique
+         */
+         if (item2.GetCenter().position.x != item1.GetCenter().position.x)
             return item2HorizontalHalfSize + item1HorizontalHalfSize > centersDistance * 2;
         else
             return item1VerticalHalfSize + item2VerticalHalfSize > centersDistance * 1.25;
