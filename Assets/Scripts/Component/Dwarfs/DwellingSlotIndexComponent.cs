@@ -4,8 +4,16 @@ using UnityEngine;
 
 namespace Nastrond
 {
-    public class DwellingSlotIndexComponent:Component
+    public class DwellingSlotIndexComponent : Component
     {
         public DwarfsSlots dwarfsSlots;
+        private DwellingSlotsManager dwellingSlotsManager;
+
+        private void Start()
+        {
+            dwellingSlotsManager = FindObjectOfType<DwellingSlotsManager>();
+            bool tmp = dwellingSlotsManager.newDwarf(this);
+            Debug.Log("Dwarf Attribute : " + tmp);
+        }
     }
 }
