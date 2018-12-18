@@ -5742,6 +5742,7 @@ GameObject:
   - component: {fileID: 258704053}
   - component: {fileID: 258704054}
   - component: {fileID: 258704055}
+  - component: {fileID: 258704056}
   m_Layer: 0
   m_Name: Systems
   m_TagString: Untagged
@@ -5861,6 +5862,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dwellingsSlots: []
   dwellingSlotIndexComponents: []
+--- !u!114 &258704056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 258704046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 706b95897b53c1d43876ccfbd9b212fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &261377399
 GameObject:
   m_ObjectHideFlags: 0
