@@ -13,7 +13,6 @@ namespace Nastrond
         {
             dwellingSlotsManager = FindObjectOfType<DwellingSlotsManager>();
             bool tmp = dwellingSlotsManager.newDwarf(this);
-            Debug.Log("Dwarf Attribute : " + tmp);
         }
     }
 }
