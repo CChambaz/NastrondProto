@@ -2475,6 +2475,8 @@ GameObject:
   - component: {fileID: 1899252423}
   - component: {fileID: 1899252422}
   - component: {fileID: 1899252424}
+  - component: {fileID: 1899252426}
+  - component: {fileID: 1899252425}
   m_Layer: 0
   m_Name: Building
   m_TagString: Untagged
@@ -2556,6 +2558,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1899252425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899252421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20f0d1c192930af47bc6216884ad14d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1899252426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899252421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bce1cb3b6b23f1540ab362c9ff92948a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildingType: 0
+  maxNumberSlots: 0
+  attributedDwarfsNumber: 0
+  dwarfsAlreadyIn: 0
 --- !u!1 &1920448164
 GameObject:
   m_ObjectHideFlags: 0
