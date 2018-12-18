@@ -70,6 +70,7 @@ namespace Nastrond {
                     if(timer > homeStateDuration) {
                         state = State.WORK;
                         timer = 0;
+                        SendDwarfsToWork();
                     }
                     break;
                 case State.WORK:
@@ -91,6 +92,10 @@ namespace Nastrond {
                 DwellingSlotIndexComponent dwellingSlotIndexComponent = dwellingSlotIndexComponents[index];
                 Transform transformComponent = dwarfsTransformComponents[index];
 
+                if (dwellingSlotIndexComponent.dwarfsSlots == null) {
+                    continue;
+                }
+
                 if (pathComponent.dwarfsSlotDestination != null) {
                     pathComponent.dwarfsSlotDestination.dwarfsAlreadyIn--;
                 }
@@ -98,6 +103,26 @@ namespace Nastrond {
                 pathComponent.nodes = aStarSystem.GetPath(transformComponent, dwellingSlotIndexComponent.dwarfsSlots.transform);
                 pathComponent.index = 0;
                 pathComponent.dwarfsSlotDestination = dwellingSlotIndexComponent.dwarfsSlots;
+            }
+        }
+
+        void SendDwarfsToWork() {
+            for(int index = 0;index < pathComponents.Length;index++) {
+                PathComponent pathComponent = pathComponents[index];
+                WorkingSlotIndexComponent workingSlotIndexComponent = workingSlotIndexComponents[index];
+                Transform transformComponent = dwarfsTransformComponents[index];
+
+                if(workingSlotIndexComponent.dwarfsSlots == null) {
+                    continue;
+                }
+
+                if(pathComponent.dwarfsSlotDestination != null) {
+                    pathComponent.dwarfsSlotDestination.dwarfsAlreadyIn--;
+                }
+
+                pathComponent.nodes = aStarSystem.GetPath(transformComponent, workingSlotIndexComponent.dwarfsSlots.transform);
+                pathComponent.index = 0;
+                pathComponent.dwarfsSlotDestination = workingSlotIndexComponent.dwarfsSlots;
             }
         }
     }
