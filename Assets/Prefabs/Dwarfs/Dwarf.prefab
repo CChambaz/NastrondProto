@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4043989024659303730}
   - component: {fileID: 4043989024659303729}
   - component: {fileID: 4043989024659303728}
+  - component: {fileID: 1653490598255095432}
   m_Layer: 0
   m_Name: Dwarf
   m_TagString: Untagged
@@ -137,3 +138,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodes: []
   index: 0
+--- !u!114 &1653490598255095432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4043989024659303734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95622bf8efc4be64ca48a47c962a3fab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dwarfsSlots: {fileID: 0}
