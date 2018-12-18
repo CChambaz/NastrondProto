@@ -10,6 +10,7 @@ namespace Nastrond
     {
         public Text StoneText;
         public Text FoodText;
+        private int counter;
 
         List<InventoryComponent> inventoryComponentList;
 
@@ -51,6 +52,21 @@ namespace Nastrond
             FoodText.text = "Food amount : " + totalAmountFood;
             Debug.Log("total food amount : " + totalAmountFood);
             Debug.Log("total stone amount : " + totalAmountStone);
+        }
+
+        public void ShowResources(bool newValue)
+        {
+            counter++;
+            if (counter % 2 == 1)
+            {
+                StoneText.color = new Color(255f, 0f, 0f, 255f);
+                FoodText.color = new Color(255f, 0f, 0f, 255f);
+            }
+            else
+            {
+                StoneText.color = new Color(255f, 0f, 0f, 0f);
+                FoodText.color = new Color(255f, 0f, 0f, 0f);
+            }
         }
     }
 }
