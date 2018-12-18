@@ -15,5 +15,13 @@ namespace Nastrond
         public int maxNumberSlots = 0;
         public int attributedDwarfsNumber = 0;
         public int dwarfsAlreadyIn = 0;
+
+        public DwellingSlotIndexComponent[] attributedDwellingsSlotIndexComponent;
+
+        private void Start()
+        {
+            attributedDwellingsSlotIndexComponent = new DwellingSlotIndexComponent[maxNumberSlots];
+            FindObjectOfType<DwellingSlotsManager>().newDwelling(this);
+        }
     }
 }
