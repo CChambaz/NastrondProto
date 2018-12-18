@@ -6,64 +6,66 @@ namespace Nastrond
 {
     public class DwellingSlotsManager:Nastrond.System
     {
-        private DwarfsSlots[] dwellingsSlots;
-        private DwellingSlotIndexComponent[] dwellingSlotIndexComponents;
-
+        public DwarfsSlots[] dwellingsSlots;
+        public DwellingSlotIndexComponent[] dwellingSlotIndexComponents;
 
         private void Start()
         {
-            Entity[] entitys = FindObjectsOfType<Entity>();
+            //Entity[] entitys = FindObjectsOfType<Entity>();
 
-            #region Dwelling Slot Component Attribution
-            List<DwarfsSlots> tmpDwarfsSlots = new List<DwarfsSlots>();
+            //#region Dwelling Slot Component Attribution
+            //List<DwarfsSlots> tmpDwarfsSlots = new List<DwarfsSlots>();
 
-            foreach (Entity entity in entitys)
-            {
-                DwarfsSlots tmpDwarfsSlot = entity.GetComponent<DwarfsSlots>();
+            //foreach (Entity entity in entitys)
+            //{
+            //    DwarfsSlots tmpDwarfsSlot = entity.GetComponent<DwarfsSlots>();
 
-                if (tmpDwarfsSlot != null && tmpDwarfsSlot.buildingType == DwarfsSlots.BuildingType.DWELLING)
-                {
-                    tmpDwarfsSlots.Add(tmpDwarfsSlot);
-                }
-            }
+            //    if (tmpDwarfsSlot != null && tmpDwarfsSlot.buildingType == DwarfsSlots.BuildingType.DWELLING)
+            //    {
+            //        tmpDwarfsSlots.Add(tmpDwarfsSlot);
+            //    }
+            //}
 
-            int nmbOfDwellingsSlot = tmpDwarfsSlots.Count;
+            //int nmbOfDwellingsSlot = tmpDwarfsSlots.Count;
 
-            dwellingsSlots = new DwarfsSlots[nmbOfDwellingsSlot];
+            //dwellingsSlots = new DwarfsSlots[nmbOfDwellingsSlot];
 
-            for (int i = 0; i < nmbOfDwellingsSlot; i++)
-            {
-                dwellingsSlots[i] = tmpDwarfsSlots[i];
-            }
-            #endregion
+            //for (int i = 0; i < nmbOfDwellingsSlot; i++)
+            //{
+            //    dwellingsSlots[i] = tmpDwarfsSlots[i];
+            //}
+            //#endregion
 
-            #region Dwarf Slot Index Component Attribution
-            List<DwellingSlotIndexComponent> tmpsDwellingSlotIndexComponents = new List<DwellingSlotIndexComponent>();
+            //#region Dwarf Slot Index Component Attribution
+            //List<DwellingSlotIndexComponent> tmpsDwellingSlotIndexComponents = new List<DwellingSlotIndexComponent>();
 
-            foreach (Entity entity in entitys)
-            {
-                DwellingSlotIndexComponent tmpDwellingSlotIndexComponent = entity.GetComponent<DwellingSlotIndexComponent>();
+            //foreach (Entity entity in entitys)
+            //{
+            //    DwellingSlotIndexComponent tmpDwellingSlotIndexComponent = entity.GetComponent<DwellingSlotIndexComponent>();
 
-                if (tmpDwellingSlotIndexComponent != null)
-                {
-                    tmpsDwellingSlotIndexComponents.Add(tmpDwellingSlotIndexComponent);
-                }
-            }
+            //    if (tmpDwellingSlotIndexComponent != null)
+            //    {
+            //        tmpsDwellingSlotIndexComponents.Add(tmpDwellingSlotIndexComponent);
+            //    }
+            //}
 
-            int nmbOfDellingSlotIndex = tmpsDwellingSlotIndexComponents.Count;
+            //int nmbOfDellingSlotIndex = tmpsDwellingSlotIndexComponents.Count;
 
-            dwellingSlotIndexComponents = new DwellingSlotIndexComponent[nmbOfDellingSlotIndex];
+            //dwellingSlotIndexComponents = new DwellingSlotIndexComponent[nmbOfDellingSlotIndex];
 
-            for (int i = 0; i < nmbOfDellingSlotIndex; i++)
-            {
-                dwellingSlotIndexComponents[i] = tmpsDwellingSlotIndexComponents[i];
-            }
-            #endregion
+            //for (int i = 0; i < nmbOfDellingSlotIndex; i++)
+            //{
+            //    dwellingSlotIndexComponents[i] = tmpsDwellingSlotIndexComponents[i];
+            //}
+            //#endregion
 
-            foreach (DwellingSlotIndexComponent dwellingSlotIndexComponent in dwellingSlotIndexComponents)
-            {
-                AttributeDwellingToDwarf(dwellingSlotIndexComponent);
-            }
+            //foreach (DwellingSlotIndexComponent dwellingSlotIndexComponent in dwellingSlotIndexComponents)
+            //{
+            //    AttributeDwellingToDwarf(dwellingSlotIndexComponent);
+            //}
+
+            dwellingsSlots = new DwarfsSlots[0];
+            dwellingSlotIndexComponents = new DwellingSlotIndexComponent[0];
         }
 
         public bool AttributeDwellingToDwarf(DwellingSlotIndexComponent dwellingSlotIndexComponent)
@@ -74,6 +76,16 @@ namespace Nastrond
                 {
                     dwellingsSlots[i].attributedDwarfsNumber++;
                     dwellingSlotIndexComponent.dwarfsSlots = dwellingsSlots[i];
+
+                    for (int j = 0; j < dwellingsSlots.Length; j++)
+                    {
+                        if (dwellingsSlots[i].attributedDwellingsSlotIndexComponent[j] != null)
+                        {
+                            dwellingsSlots[i].attributedDwellingsSlotIndexComponent[j] = dwellingSlotIndexComponent;
+                            break;
+                        }
+                    }
+
                     return true;
                 }
             }
@@ -88,7 +100,13 @@ namespace Nastrond
             {
                 return false;
             }
+
             return true;
+        }
+
+        public void newDwelling(DwarfsSlots dwarfsSlots)
+        {
+            IncreaseDwellingSlotsComponentSizeAndAttribute(dwarfsSlots);
         }
 
         private void IncreaseDwellingSlotIndexComponentsSizeAndAttribute(DwellingSlotIndexComponent dwellingSlotIndexComponent)
@@ -107,7 +125,7 @@ namespace Nastrond
 
         private void IncreaseDwellingSlotsComponentSizeAndAttribute(DwarfsSlots dwarfsSlots)
         {
-            DwarfsSlots[] tmpDwarfsSlots = new DwarfsSlots[dwellingsSlots.Length];
+            DwarfsSlots[] tmpDwarfsSlots = new DwarfsSlots[dwellingsSlots.Length + 1];
 
             for (int i = 0; i < dwellingsSlots.Length; i++)
             {
