@@ -12,9 +12,9 @@ namespace Nastrond {
         PathComponent[] pathComponents;
         DwellingSlotIndexComponent[] dwellingSlotIndexComponents;
         WorkingSlotIndexComponent[] workingSlotIndexComponents;
-        Transform[] transformComponents;
+        Transform[] dwarfsTransformComponents;
 
-        //TODO Remove to placce inside a component
+        //TODO Remove to place inside a component
         enum State {
             IDLE,
             HOME,
@@ -24,7 +24,7 @@ namespace Nastrond {
         State state = State.IDLE;
         float timer = 0;
 
-        float idleStateDuration = 10f;
+        float idleStateDuration = 1f;
         float homeStateDuration = 60f;
         float workStateDuration = 60f;
 
@@ -50,7 +50,7 @@ namespace Nastrond {
             pathComponents = tmpPathComponents.ToArray();
             dwellingSlotIndexComponents = tmpDwellingSlotIndexComponents.ToArray();
             workingSlotIndexComponents = tmpWorkingSlotIndexComponents.ToArray();
-            transformComponents = tmpTransformComponents.ToArray();
+            dwarfsTransformComponents = tmpTransformComponents.ToArray();
 
             aStarSystem = FindObjectOfType<AstarSystem>();
         }
@@ -89,10 +89,15 @@ namespace Nastrond {
             for (int index = 0; index < pathComponents.Length; index++) {
                 PathComponent pathComponent = pathComponents[index];
                 DwellingSlotIndexComponent dwellingSlotIndexComponent = dwellingSlotIndexComponents[index];
-                Transform transformComponent = transformComponents[index];
+                Transform transformComponent = dwarfsTransformComponents[index];
+
+                if (pathComponent.dwarfsSlotDestination != null) {
+                    pathComponent.dwarfsSlotDestination.dwarfsAlreadyIn--;
+                }
 
                 pathComponent.nodes = aStarSystem.GetPath(transformComponent, dwellingSlotIndexComponent.dwarfsSlots.transform);
                 pathComponent.index = 0;
+                pathComponent.dwarfsSlotDestination = dwellingSlotIndexComponent.dwarfsSlots;
             }
         }
     }
