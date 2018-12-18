@@ -9,7 +9,7 @@ public class buildingBtn : MonoBehaviour
     public GameObject tmpBuildingRef;
     public GridLayout gridLayout;
     private Coroutine dragCoroutine;
- 
+    private bool actionCancelled=false;
     private List<GameObject> cityBuildings;
 
     enum ValidationState
@@ -40,9 +40,10 @@ public class buildingBtn : MonoBehaviour
             }
         }
 
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(1)&&dragCoroutine!=null)
         {
-            Destroy(tmpBuildingRef);
+
+            actionCancelled = true;
             
         }
     }
@@ -57,6 +58,8 @@ public class buildingBtn : MonoBehaviour
         Debug.Log("Building exists");
         while (true)
         {
+
+            
             mousePositionInWorldPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Vector3Int cellPosition = gridLayout.WorldToCell(new Vector3Int(Mathf.RoundToInt(mousePositionInWorldPoint.x), Mathf.RoundToInt(mousePositionInWorldPoint.y), /*Mathf.RoundToInt(mousePositionInWorldPoint.z)*/0));
             
@@ -69,7 +72,7 @@ public class buildingBtn : MonoBehaviour
                 bool collide=false;
                 foreach (GameObject item in cityBuildings)
                 {
-
+                    
                     if (item.transform.position.x < tmpBuilding.transform.position.x + tmpBuilding.GetComponent<SpriteRenderer>().bounds.size.x &&
                          item.transform.position.x + item.GetComponent<SpriteRenderer>().bounds.size.x > tmpBuilding.transform.position.x &&
                         item.transform.position.y < tmpBuilding.transform.position.y + tmpBuilding.GetComponent<SpriteRenderer>().bounds.size.y &&
@@ -96,7 +99,16 @@ public class buildingBtn : MonoBehaviour
             }
             
             yield return new WaitForEndOfFrame();
+            if(actionCancelled)
+            {
+                Destroy(tmpBuilding);
+                actionCancelled = false;
+                break;
+            }
+
         }
+
+
     }
 
     
