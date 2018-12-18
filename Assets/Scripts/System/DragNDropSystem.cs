@@ -11,6 +11,7 @@ public class DragNDropSystem : MonoBehaviour
     public void AddCityBuilding(GameObject building)
     {
         cityBuildings.Add(building);
+        Debug.Log("Added building: " + building.transform.position);
     }
 
     public List<GameObject> GetcityBuildings()
