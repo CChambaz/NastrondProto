@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Text;
 using UnityEngine;
 
 namespace Nastrond {
@@ -19,13 +20,15 @@ namespace Nastrond {
 
             //Get Entity Contain ComponentMove
             foreach (GameObject e in tmpEntities) {
-                if (e.GetComponent<ComponentMove>() == null || e.GetComponent<ComponentMap>() == null) {
-                    continue;
+                if (e.GetComponent<ComponentMove>() != null) {
+                    moveComponents.Add(e.GetComponent<ComponentMove>());
+                    transformComponents.Add(e.GetComponent<Transform>());
                 }
 
-                moveComponents.Add(e.GetComponent<ComponentMove>());
-                mapComponents.Add(e.GetComponent<ComponentMap>());
-                transformComponents.Add(e.GetComponent<Transform>());
+                if (e.GetComponent<ComponentMap>() != null)
+                {
+                    mapComponents.Add(e.GetComponent<ComponentMap>());
+                }
             }
         }
 
@@ -35,7 +38,6 @@ namespace Nastrond {
              * SFGE ce ne sera pas possible de faire comme ça
              */
             Vector2 sizeDisplay = new Vector2(Display.main.renderingWidth, Display.main.renderingHeight);
-
             for (int index = 0; index < moveComponents.Count; index++) {
                 ComponentMove moveComponent = moveComponents[index];
                 ComponentMap mapComponent = mapComponents[index];
@@ -45,7 +47,6 @@ namespace Nastrond {
                  * Ce n'est pas de l'ECS, mais après je n'ai pas d'idée de comment faire dans Unity
                  */
                 Vector2 mousePosition = Input.mousePosition;
-
                 if ((mousePosition.x >= 0 && mousePosition.x <= sizeDisplay.x)
                     && (mousePosition.y >= 0 && mousePosition.y <= sizeDisplay.y)) {
                     cameraPosition = transformComponent.position;
