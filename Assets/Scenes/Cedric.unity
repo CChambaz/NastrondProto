@@ -213,7 +213,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingType: 0
   maxNumberSlots: 10
-  attributedDwarfsNumber: 10
+  attributedDwarfsNumber: 3
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
 --- !u!1001 &578482057
@@ -305,7 +305,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingType: 0
   maxNumberSlots: 10
-  attributedDwarfsNumber: 10
+  attributedDwarfsNumber: 2
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
 --- !u!114 &578482060
@@ -349,9 +349,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cba09bdac1e147459618446231b6bdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  creatDwarfTimer: 20
-  creatDwarfMin: 2
-  creatDwarfMax: 7
+  spawnDwarfTimer: 120
+  spawnDwarfMin: 2
+  spawnDwarfMax: 7
 --- !u!4 &1692445560
 Transform:
   m_ObjectHideFlags: 0
