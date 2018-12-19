@@ -22,7 +22,6 @@ namespace Nastrond {
 
             foreach (Vector3Int pos in tilemap.cellBounds.allPositionsWithin) {
                 Vector3Int localPlace = new Vector3Int(pos.x, pos.y, pos.z);
-                Vector3 place = tilemap.CellToWorld(localPlace);
                 if (tilemap.HasTile(localPlace)) {
                     TileBase currentTile = tilemap.GetTile(localPlace);
 

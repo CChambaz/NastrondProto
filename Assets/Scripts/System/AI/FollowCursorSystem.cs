@@ -43,8 +43,13 @@ namespace Nastrond
                     PathComponent pathComponent = pathComponents[index];
                     Transform transformComponent = transformComponents[index];
 
+                    if(pathComponent.dwarfsSlotDestination != null) {
+                        pathComponent.dwarfsSlotDestination.dwarfsAlreadyIn--;
+                    }
+
                     pathComponent.nodes = aStarSystem.GetPath(transformComponent, v2);
                     pathComponent.index = 0;
+                    pathComponent.dwarfsSlotDestination = null;
                 }
                 Debug.Log("time = " + (Time.realtimeSinceStartup - time));
             }
