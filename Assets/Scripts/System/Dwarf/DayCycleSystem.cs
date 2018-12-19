@@ -15,13 +15,13 @@ namespace Nastrond {
         Transform[] dwarfsTransformComponents;
 
         //TODO Remove to place inside a component
-        enum State {
+        public enum State {
             IDLE,
             HOME,
             WORK
         }
 
-        State state = State.IDLE;
+        public State state = State.IDLE;
         float timer = 0;
 
         float idleStateDuration = 1f;
@@ -77,6 +77,7 @@ namespace Nastrond {
                     if(timer > workStateDuration) {
                         state = State.HOME;
                         timer = 0;
+                        SendDwarfsToHome();
                     }
                     break;
                 default:
@@ -96,13 +97,14 @@ namespace Nastrond {
                     continue;
                 }
 
-                if (pathComponent.dwarfsSlotDestination != null) {
-                    pathComponent.dwarfsSlotDestination.dwarfsAlreadyIn--;
+                if (pathComponent.index != 0 && pathComponent.dwarfsSlots[pathComponent.index - 1] != null) {
+                    pathComponent.dwarfsSlots[pathComponent.index - 1].dwarfsAlreadyIn--;
                 }
 
                 pathComponent.nodes = aStarSystem.GetPath(transformComponent, dwellingSlotIndexComponent.dwarfsSlots.transform);
                 pathComponent.index = 0;
-                pathComponent.dwarfsSlotDestination = dwellingSlotIndexComponent.dwarfsSlots;
+                pathComponent.dwarfsSlots = new DwarfsSlots[pathComponent.nodes.Length];
+                pathComponent.dwarfsSlots[pathComponent.nodes.Length - 1] = dwellingSlotIndexComponent.dwarfsSlots;
             }
         }
 
@@ -116,13 +118,14 @@ namespace Nastrond {
                     continue;
                 }
 
-                if(pathComponent.dwarfsSlotDestination != null) {
-                    pathComponent.dwarfsSlotDestination.dwarfsAlreadyIn--;
+                if(pathComponent.index != 0 && pathComponent.dwarfsSlots[pathComponent.index - 1] != null) {
+                    pathComponent.dwarfsSlots[pathComponent.index - 1].dwarfsAlreadyIn--;
                 }
 
                 pathComponent.nodes = aStarSystem.GetPath(transformComponent, workingSlotIndexComponent.dwarfsSlots.transform);
                 pathComponent.index = 0;
-                pathComponent.dwarfsSlotDestination = workingSlotIndexComponent.dwarfsSlots;
+                pathComponent.dwarfsSlots = new DwarfsSlots[pathComponent.nodes.Length];
+                pathComponent.dwarfsSlots[pathComponent.nodes.Length -1] = workingSlotIndexComponent.dwarfsSlots;
             }
         }
     }
