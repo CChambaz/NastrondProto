@@ -14,14 +14,12 @@ namespace Nastrond
         PathComponent[] pathComponents;
         Transform[] dwarfsTransformComponents;
 
-        //Building Giver
-        InventoryComponent[] giverInventoryComponents;
+        //Building Give
         DwarfsSlots[] giverDwarfsSlotComponents;
         Transform[] giverTransformComponents;
         GiverComponent[] giverComponents;
 
         //Building Receiver
-        InventoryComponent[] receiverInventoryComponents;
         DwarfsSlots[] receiverDwarfsSlotComponents;
         Transform[] receiverTransformComponents;
         ReceiverComponent[] receiverComponents;
@@ -39,13 +37,11 @@ namespace Nastrond
             List<InventoryComponent> tmpDwarfsInventoryComponents = new List<InventoryComponent>();
 
             //Giver
-            List<InventoryComponent> tmpGiverBuildingInventoryComponents = new List<InventoryComponent>();
             List<DwarfsSlots> tmpGiverDwarfsSlotsComponents = new List<DwarfsSlots>();
             List<Transform> tmpGiverBuildingsTransformsComponents = new List<Transform>();
             List<GiverComponent> tmpGiverComponents = new List<GiverComponent>();
 
             //Receiver
-            List<InventoryComponent> tmpReceiverBuildingInventoryComponents = new List<InventoryComponent>();
             List<DwarfsSlots> tmpReceiverDwarfsSlotsComponents = new List<DwarfsSlots>();
             List<Transform> tmpReceiverBuildingsTransformsComponents = new List<Transform>();
             List<ReceiverComponent> tmpReceiverComponents = new List<ReceiverComponent>();
@@ -63,17 +59,13 @@ namespace Nastrond
                     tmpPathComponents.Add(e.GetComponent<PathComponent>());
                     tmpDwarfsTransformComponents.Add(e.GetComponent<Transform>());
                     tmpDwarfsInventoryComponents.Add((e.GetComponent<InventoryComponent>()));
-                }else if (e.GetComponent<InventoryComponent>() && 
-                          e.GetComponent<DwarfsSlots>() &&
+                }else if (e.GetComponent<DwarfsSlots>() &&
                           e.GetComponent<GiverComponent>()) {
-                    tmpGiverBuildingInventoryComponents.Add(e.GetComponent<InventoryComponent>());
                     tmpGiverDwarfsSlotsComponents.Add(e.GetComponent<DwarfsSlots>());
                     tmpGiverComponents.Add(e.GetComponent<GiverComponent>());
                     tmpGiverBuildingsTransformsComponents.Add(e.GetComponent<Transform>());
-                }else if (e.GetComponent<InventoryComponent>() &&
-                          e.GetComponent<DwarfsSlots>() &&
+                }else if (e.GetComponent<DwarfsSlots>() &&
                           e.GetComponent<ReceiverComponent>()) {
-                    tmpReceiverBuildingInventoryComponents.Add(e.GetComponent<InventoryComponent>());
                     tmpReceiverDwarfsSlotsComponents.Add(e.GetComponent<DwarfsSlots>());
                     tmpReceiverComponents.Add(e.GetComponent<ReceiverComponent>());
                     tmpReceiverBuildingsTransformsComponents.Add(e.GetComponent<Transform>());
@@ -93,13 +85,11 @@ namespace Nastrond
             dwarfsTransformComponents = tmpDwarfsTransformComponents.ToArray();
 
             //Giver
-            giverInventoryComponents = tmpGiverBuildingInventoryComponents.ToArray();
             giverDwarfsSlotComponents = tmpGiverDwarfsSlotsComponents.ToArray();
             giverComponents = tmpGiverComponents.ToArray();
             giverTransformComponents = tmpGiverBuildingsTransformsComponents.ToArray();
 
             //Receiver
-            receiverInventoryComponents = tmpReceiverBuildingInventoryComponents.ToArray();
             receiverDwarfsSlotComponents = tmpReceiverDwarfsSlotsComponents.ToArray();
             receiverComponents = tmpReceiverComponents.ToArray();
             receiverTransformComponents = tmpReceiverBuildingsTransformsComponents.ToArray();
@@ -123,8 +113,7 @@ namespace Nastrond
             //Get ressource from giver then go the passiveInventory
             for (int index = 0; index < giverComponents.Length; index++) {
                 GiverComponent giverComponent = giverComponents[index];
-                InventoryComponent giverInventoryComponent = giverInventoryComponents[index];
-                if (giverComponent.nbDwarfsAttributed >= 1 || giverInventoryComponent.amount < 10) continue;
+                if (giverComponent.nbDwarfsAttributed >= 1 || giverComponent.amount < 10) continue;
                 
                 for (int i = 0; i < pathComponents.Length; i++) {
                     PathComponent pathComponent = pathComponents[i];
@@ -156,8 +145,7 @@ namespace Nastrond
             //Get ressource from storage then go the receiver
             for(int index = 0;index < receiverComponents.Length;index++) {
                 ReceiverComponent receiverComponent = receiverComponents[index];
-                InventoryComponent receiverInventoryComponent = receiverInventoryComponents[index];
-                if(receiverComponent.nbDwarfsAttributed >= 1 || receiverInventoryComponent.amount >= receiverInventoryComponent.maxCapacity) continue;
+                if(receiverComponent.nbDwarfsAttributed >= 1 || receiverComponent.amount >= receiverComponent.maxCapacity) continue;
 
 
                 for(int i = 0;i < pathComponents.Length;i++) {
