@@ -20,8 +20,17 @@ namespace Nastrond
 
         private void Start()
         {
+            if (buildingType == BuildingType.DWELLING)
+                FindObjectOfType<GrowthSystem>().RegisterDwelling(this);
+
             attributedDwellingsSlotIndexComponent = new DwellingSlotIndexComponent[maxNumberSlots];
             FindObjectOfType<DwellingSlotsManager>().newDwelling(this);
+        }
+
+        private void OnDestroy()
+        {
+            if(buildingType == BuildingType.DWELLING)
+                FindObjectOfType<GrowthSystem>().UnregisterDwelling(this);
         }
     }
 }
