@@ -15,13 +15,13 @@ namespace Nastrond {
         Transform[] dwarfsTransformComponents;
 
         //TODO Remove to place inside a component
-        enum State {
+        public enum State {
             IDLE,
             HOME,
             WORK
         }
 
-        State state = State.IDLE;
+        public State state = State.IDLE;
         float timer = 0;
 
         float idleStateDuration = 1f;
