@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Nastrond
 {
-    public class ReceiverComponent:Component {
+    public class ReceiverComponent : Component {
         public int amount;
         public int maxCapacity;
         public ResourceType resourceType = ResourceType.NULL;

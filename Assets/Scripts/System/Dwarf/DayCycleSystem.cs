@@ -97,13 +97,14 @@ namespace Nastrond {
                     continue;
                 }
 
-                if (pathComponent.dwarfsSlotDestination != null) {
-                    pathComponent.dwarfsSlotDestination.dwarfsAlreadyIn--;
+                if (pathComponent.index != 0 && pathComponent.dwarfsSlots[pathComponent.index - 1] != null) {
+                    pathComponent.dwarfsSlots[pathComponent.index - 1].dwarfsAlreadyIn--;
                 }
 
                 pathComponent.nodes = aStarSystem.GetPath(transformComponent, dwellingSlotIndexComponent.dwarfsSlots.transform);
                 pathComponent.index = 0;
-                pathComponent.dwarfsSlotDestination = dwellingSlotIndexComponent.dwarfsSlots;
+                pathComponent.dwarfsSlots = new DwarfsSlots[pathComponent.nodes.Length];
+                pathComponent.dwarfsSlots[pathComponent.nodes.Length - 1] = dwellingSlotIndexComponent.dwarfsSlots;
             }
         }
 
@@ -117,13 +118,14 @@ namespace Nastrond {
                     continue;
                 }
 
-                if(pathComponent.dwarfsSlotDestination != null) {
-                    pathComponent.dwarfsSlotDestination.dwarfsAlreadyIn--;
+                if(pathComponent.index != 0 && pathComponent.dwarfsSlots[pathComponent.index - 1] != null) {
+                    pathComponent.dwarfsSlots[pathComponent.index - 1].dwarfsAlreadyIn--;
                 }
 
                 pathComponent.nodes = aStarSystem.GetPath(transformComponent, workingSlotIndexComponent.dwarfsSlots.transform);
                 pathComponent.index = 0;
-                pathComponent.dwarfsSlotDestination = workingSlotIndexComponent.dwarfsSlots;
+                pathComponent.dwarfsSlots = new DwarfsSlots[pathComponent.nodes.Length];
+                pathComponent.dwarfsSlots[pathComponent.nodes.Length -1] = workingSlotIndexComponent.dwarfsSlots;
             }
         }
     }
