@@ -28,16 +28,15 @@ namespace Nastrond
         // Update is called once per frame
         void Update()
         {
-            Debug.Log(Input.mouseScrollDelta.y);
-            if (Input.mouseScrollDelta.y > 0 && camera.orthographicSize > zoomComponent.ZoomMax)
+            float scrool = Input.mouseScrollDelta.y;
+            if (scrool > 0 && camera.orthographicSize > zoomComponent.ZoomMax)
             {
-                Debug.Log("Zoom");
-                camera.orthographicSize -= zoomComponent.VelocityZoom * Time.deltaTime * Input.mouseScrollDelta.y;
+                camera.orthographicSize -= zoomComponent.VelocityZoom * Time.deltaTime * scrool;
             }
 
-            if (Input.mouseScrollDelta.y < 0 && camera.orthographicSize < zoomComponent.ZoomMin)
+            if (scrool < 0 && camera.orthographicSize < zoomComponent.ZoomMin)
             {
-                camera.orthographicSize -= zoomComponent.VelocityZoom * Time.deltaTime * Input.mouseScrollDelta.y;
+                camera.orthographicSize -= zoomComponent.VelocityZoom * Time.deltaTime * scrool;
             }
         }
     }

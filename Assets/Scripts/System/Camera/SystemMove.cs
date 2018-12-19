@@ -47,6 +47,7 @@ namespace Nastrond {
                  * Ce n'est pas de l'ECS, mais après je n'ai pas d'idée de comment faire dans Unity
                  */
                 Vector2 mousePosition = Input.mousePosition;
+
                 if ((mousePosition.x >= 0 && mousePosition.x <= sizeDisplay.x)
                     && (mousePosition.y >= 0 && mousePosition.y <= sizeDisplay.y)) {
                     cameraPosition = transformComponent.position;
@@ -54,25 +55,53 @@ namespace Nastrond {
                     Vector2 dir = new Vector2();
                     if (cameraPosition.y > mapComponent.offSet.y) {
                         if (mousePosition.y < sizeDisplay.y / 100 * 15) {
-                            dir.y = -1;
+                            if (mousePosition.y < sizeDisplay.y / 100 * 5)
+                            {
+                                dir.y = -moveComponent.multiplyVelocity;
+                            }
+                            else
+                            {
+                                dir.y = -1;
+                            }
                         }
                     }
 
                     if (cameraPosition.y < mapComponent.offSet.y + mapComponent.sizeMap.y) {
                         if (mousePosition.y > sizeDisplay.y / 100 * 85) {
-                            dir.y = 1;
+                            if (mousePosition.y > sizeDisplay.y / 100 * 95)
+                            {
+                                dir.y = moveComponent.multiplyVelocity;
+                            }
+                            else
+                            {
+                                dir.y = 1;
+                            }
                         }
                     }
 
                     if (cameraPosition.x > mapComponent.offSet.x) {
                         if (mousePosition.x < sizeDisplay.x / 100 * 15) {
-                            dir.x = -1;
+                            if (mousePosition.x < sizeDisplay.x / 100 * 5)
+                            {
+                                dir.x = -moveComponent.multiplyVelocity;
+                            }
+                            else
+                            {
+                                dir.x = -1;
+                            }
                         }
                     }
 
                     if (cameraPosition.x < mapComponent.offSet.x + mapComponent.sizeMap.x) {
                         if (mousePosition.x > sizeDisplay.x / 100 * 85) {
-                            dir.x = 1;
+                            if (mousePosition.x > sizeDisplay.x / 100 * 95)
+                            {
+                                dir.x = moveComponent.multiplyVelocity;
+                            }
+                            else
+                            {
+                                dir.x = 1;
+                            }
                         }
                     }
 
