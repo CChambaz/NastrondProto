@@ -5,15 +5,9 @@ using Random = UnityEngine.Random;
 
 namespace Nastrond
 {
-    /* // Comment
-     * / This system is currently based on the DwarfsSlots component wich are of the type Dwelling
-     * / A problem can happen when the player destroy one of them, it will not show the exact dwarf number
-     * / Possible upgrade : base the system on the dwarves themself, should be able to be done when the spawn of them is implemented
-     */ 
     public class GrowthSystem : Nastrond.System
     {
-        List<DwarfsSlots> dwarfSlots = new List<DwarfsSlots>();
-
+        public int initialPopulation = 8;
         int populationCapacity = 0;
         int populationCount = 0;
 
@@ -29,37 +23,13 @@ namespace Nastrond
         {
             Random.InitState(Random.Range(0, int.MaxValue));
 
-            spawnDwarfTimer = Random.Range(spawnDwarfTimerMin, spawnDwarfTimerMax);
+            SpawnDwarfs(initialPopulation);
         }
 
         void Update()
         {
             if (Time.time > lastTimeDwarfHasBeenSpawned + spawnDwarfTimer)
                 SpawnDwarfs(Random.Range(spawnDwarfMin, spawnDwarfMax));
-
-            SetPopulationCount();
-        }
-
-        public void RegisterDwelling(DwarfsSlots ds)
-        {
-            populationCapacity += ds.maxNumberSlots;
-            dwarfSlots.Add(ds);
-        }
-
-        public void UnregisterDwelling(DwarfsSlots ds)
-        {
-            populationCapacity -= ds.maxNumberSlots;
-            dwarfSlots.Remove(ds);
-        }
-
-        void SetPopulationCount()
-        {
-            int tmpPopCount = 0;
-            
-            foreach (DwarfsSlots ds in dwarfSlots)
-                tmpPopCount += ds.attributedDwarfsNumber;
-
-            populationCount = tmpPopCount;
         }
 
         void SpawnDwarfs(int number)
@@ -73,13 +43,33 @@ namespace Nastrond
             if (number <= 0)
                 return;
 
-            for(int i = 0; i < number; i++)
+            for (int i = 0; i < number; i++)
             {
                 /*
                  * // TODO:
                  * // Actually creat a dwarf
                 */
             }
+        }
+
+        public void RegisterDwelling(DwarfsSlots ds)
+        {
+            populationCapacity += ds.maxNumberSlots;
+        }
+
+        public void UnregisterDwelling(DwarfsSlots ds)
+        {
+            populationCapacity -= ds.maxNumberSlots;
+        }
+
+        public void RegisterDwarf()
+        {
+            populationCount++;
+        }
+
+        public void UnregisterDwarf()
+        {
+            populationCount--;
         }
 
         public int GetPopulationCount()
