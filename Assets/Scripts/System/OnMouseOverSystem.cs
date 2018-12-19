@@ -5,60 +5,59 @@ using UnityEngine;
 
 namespace Nastrond
 {
+
     public class OnMouseOverSystem : System
     {
-
-        List<DwarfToolComponent> receiverComponentList;
+        List<InventoryComponent> inventoryComponentList;
+        List<SpriteRenderer> spriteList;
+        private Vector3 tmpLookPos;
+        private bool resourceShow = true;
 
         // Start is called before the first frame update
         void Start()
-        {
-            receiverComponentList = new List<DwarfToolComponent>();
+        {     
+            inventoryComponentList = new List<InventoryComponent>();
+            spriteList = new List<SpriteRenderer>();
+
             List<GameObject> tmpEntities = GetEntities();
 
             foreach (GameObject e in tmpEntities)
             {
-                if (e.GetComponent<DwarfToolComponent>())
+                if (e.GetComponent<InventoryComponent>() && e.GetComponent<SpriteRenderer>())
                 {
-                    receiverComponentList.Add(e.GetComponent<DwarfToolComponent>());
+                    inventoryComponentList.Add(e.GetComponent<InventoryComponent>());
+                    spriteList.Add(e.GetComponent<SpriteRenderer>());
                 }
-            }
+            }   
         }
 
         // Update is called once per frame
         void Update()
         {
-            for (int index = 0; index < receiverComponentList.Count; index++)
+            Vector3 mousePos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 10);
+            Vector3 lookPos = Camera.main.ScreenToWorldPoint(mousePos);
+            if (resourceShow && lookPos != tmpLookPos)
             {
-                Debug.Log("receiver resource is " + receiverComponentList[index].dwarftool);
-                Debug.Log("amount : " + receiverComponentList[index].durability);
+                for (int index = 0; index < spriteList.Count; index++)
+                {
+                    if (lookPos.x <= spriteList[index].bounds.max.x
+                                     && lookPos.x >= spriteList[index].bounds.min.x
+                                     && lookPos.y <= spriteList[index].bounds.max.y
+                                     && lookPos.y >= spriteList[index].bounds.min.y)
+                    {
+                        Debug.Log("this inventory contains : " + inventoryComponentList[index].resourceType);
+                        Debug.Log("amount : " + inventoryComponentList[index].amount);
+                        resourceShow = false;
+                    }
+                }
             }
+            if (Input.GetMouseButtonDown(1))
+            {
+                resourceShow = true;
+            }
+            tmpLookPos = lookPos;
         }
     }
 }
-
-/*
- 
-RectTransform map;
-
-public bool isMouseOverMap()
-{
-    Vector2 mousePosition = Input.mousePosition;
-    Vector3[] worldCorners = new Vector3[4];
-    map.GetWorldCorners(worldCorners);
-    (sprite.getBounds())
-
-    if (mousePosition.x >= worldCorners[0].x && mousePosition.x < worldCorners[2].x
-    && mousePosition.y >= worldCorners[0].y && mousePosition.y < worldCorners[2].y)
-    {
-        return true;
-    }
-    else
-    {
-        return false;
-    }    
-}
-
- */
 
 
