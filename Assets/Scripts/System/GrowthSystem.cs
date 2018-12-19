@@ -13,10 +13,10 @@ namespace Nastrond
         int populationCapacity = 0;
         int populationCount = 0;
 
-        public float creatDwarfTimer = 120.0f;
-        public int creatDwarfMin = 2;
-        public int creatDwarfMax = 7;
-        float lastTimeDwarfHasBeenCreated = 0f;        
+        public float spawnDwarfTimer = 120.0f;
+        public int spawnDwarfMin = 2;
+        public int spawnDwarfMax = 7;
+        float lastTimeDwarfHasBeenSpawned = 0f;        
 
         void Update()
         {
@@ -25,11 +25,11 @@ namespace Nastrond
             if (dwarfSlotsHasChanged)
                 SetPopulationCapacity();
 
-            if (Time.time > lastTimeDwarfHasBeenCreated + creatDwarfTimer)
+            if (Time.time > lastTimeDwarfHasBeenSpawned + spawnDwarfTimer)
             {
                 Random.InitState(Random.Range(0, int.MaxValue));
 
-                SpawnDwarfs(Random.Range(creatDwarfMin, creatDwarfMax));
+                SpawnDwarfs(Random.Range(spawnDwarfMin, spawnDwarfMax));
             }
 
             SetPopulationCount();
@@ -85,7 +85,7 @@ namespace Nastrond
 
         void SpawnDwarfs(int number)
         {
-            lastTimeDwarfHasBeenCreated = Time.time;
+            lastTimeDwarfHasBeenSpawned = Time.time;
 
             if (populationCount + number > populationCapacity)
                 number = populationCapacity - populationCount;
@@ -102,6 +102,16 @@ namespace Nastrond
 
                 Debug.Log("Dwarf n°" + i + " has been created!");
             }
+        }
+
+        public int GetPopulationCount()
+        {
+            return populationCount;
+        }
+
+        public int GetPopulationCapacity()
+        {
+            return populationCapacity;
         }
     }
 }
