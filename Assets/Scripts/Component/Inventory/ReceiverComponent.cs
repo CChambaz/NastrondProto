@@ -4,17 +4,11 @@ using UnityEngine;
 
 namespace Nastrond
 {
-    public enum ResourceType
-    {
-        NULL,
-        FOOD,
-        STONE
-    }
-
-    public class InventoryComponent : Component
-    {
+    public class ReceiverComponent : Component {
         public int amount;
         public int maxCapacity;
         public ResourceType resourceType = ResourceType.NULL;
+        public int nbDwarfsAttributed;
     }
 }
+

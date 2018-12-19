@@ -50,14 +50,17 @@ namespace Nastrond
                 //Test distance
                 if (Vector2.Distance(transformComponent.position,
                         pathComponent.nodes[pathComponent.index].position.position) < 0.2f) {
+
+                    if(pathComponent.index != 0 && pathComponent.dwarfsSlots[pathComponent.index - 1] != null) {
+                        pathComponent.dwarfsSlots[pathComponent.index - 1].dwarfsAlreadyIn--;
+                    }
+                    if(pathComponent.index != 0 && pathComponent.dwarfsSlots[pathComponent.index] != null) {
+                        pathComponent.dwarfsSlots[pathComponent.index].dwarfsAlreadyIn++;
+                    }
                     pathComponent.index++;
                     if (pathComponent.index >= pathComponent.nodes.Length) {
-                        pathComponent.index = 0;
                         pathComponent.nodes = new GraphNodeComponent[0];
                         motionComponent.direction = Vector2.zero;
-                        if (pathComponent.dwarfsSlotDestination != null) {
-                            pathComponent.dwarfsSlotDestination.dwarfsAlreadyIn++;
-                        }
                         continue;
                     }
                 }
