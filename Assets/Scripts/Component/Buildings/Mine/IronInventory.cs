@@ -6,6 +6,7 @@ namespace Nastrond
 {
     public class IronInventory : MonoBehaviour
     {
-        private int iron = 0; 
+        public int IronMaxCapacity = 100;
+        public int ironStoredIn = 0; 
     }
 }

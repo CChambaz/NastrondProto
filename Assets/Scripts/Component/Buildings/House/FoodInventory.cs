@@ -9,7 +9,12 @@ namespace Nastrond
         public int maxFoodCapacity = 100;
         public int foodStoredIn = 50;
 
-        public int lastConsumptionConsumption = 0;
+        public int timeSinceLastConsumption = 0;
         public float minuteBeforConsuming = 2;
+
+        private void Start()
+        {
+            FindObjectOfType<DwellingConsumptionManager>().newDwelling(GetComponent<Entity>());
+        }
     }
 }

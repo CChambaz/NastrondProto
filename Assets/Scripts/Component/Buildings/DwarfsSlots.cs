@@ -17,11 +17,16 @@ namespace Nastrond
         public int dwarfsAlreadyIn = 0;
 
         public DwellingSlotIndexComponent[] attributedDwellingsSlotIndexComponent;
+        public WorkingSlotIndexComponent[] attributedWorkingsSlotIndexComponent;
 
         private void Start()
         {
             attributedDwellingsSlotIndexComponent = new DwellingSlotIndexComponent[maxNumberSlots];
-            FindObjectOfType<DwellingSlotsManager>().newDwelling(this);
+            attributedWorkingsSlotIndexComponent = new WorkingSlotIndexComponent[maxNumberSlots];
+            if(buildingType == BuildingType.DWELLING)
+                FindObjectOfType<DwellingSlotsManager>().newDwelling(this);
+            else if (buildingType == BuildingType.WORKING_PLACE)
+                FindObjectOfType<WorkingSlotsManager>().NewWorkingPlace(this);
         }
     }
 }
