@@ -77,6 +77,7 @@ namespace Nastrond {
                     if(timer > workStateDuration) {
                         state = State.HOME;
                         timer = 0;
+                        SendDwarfsToHome();
                     }
                     break;
                 default:
