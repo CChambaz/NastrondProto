@@ -160,34 +160,55 @@ namespace Nastrond
             }
 
             //Get ressource from storage then go the receiver
-            for(int index = 0;index < receiverComponents.Length;index++) {
+            for (int index = 0; index < receiverComponents.Length; index++) {
                 ReceiverComponent receiverComponent = receiverComponents[index];
-                if(receiverComponent.nbDwarfsAttributed >= 1 || receiverComponent.amount >= receiverComponent.maxCapacity) continue;
-                
+                if (receiverComponent.nbDwarfsAttributed >= 1 || receiverComponent.amount >= receiverComponent.maxCapacity) continue;
 
-                for(int i = 0;i < pathComponents.Length;i++) {
+                for (int i = 0; i < pathComponents.Length; i++) {
                     PathComponent pathComponent = pathComponents[i];
-                    if (pathComponent.nodes.Length != 0 ) continue;
+                    if (pathComponent.nodes.Length != 0) continue;
 
-                    receiverComponent.nbDwarfsAttributed++;
-
-                    Transform receiverBuildingTransformsComponent =  receiverTransformComponents[index];
+                    Transform receiverBuildingTransformsComponent = receiverTransformComponents[index];
                     DwarfsSlots receiverDwarfsSlots = receiverDwarfsSlotComponents[index];
 
                     Transform dwarfsTransform = dwarfsTransformComponents[i];
 
-                    if(pathComponent.index != 0 && pathComponent.dwarfsSlots[pathComponent.index - 1] != null) {
-                        pathComponent.dwarfsSlots[pathComponent.index - 1].dwarfsAlreadyIn--;
+                    //Then go to closet storage
+                    int indexPassiveInventory =
+                        GetClosestStorageIndexFromBuilding(receiverBuildingTransformsComponent.position,
+                            receiverComponent.resourceType);
+
+                    if (indexPassiveInventory == -1) {
+                        continue;
                     }
 
-                    //Go to closet storage
+                    InventoryComponent dwarfsInventoryComponent = dwarfsInventoryComponents[i];
 
-                    //Then go to receiver
-                    pathComponent.nodes = aStarSystem.GetPath(dwarfsTransform, receiverBuildingTransformsComponent);
+                    if (pathComponent.index != 0 && pathComponent.dwarfsSlots[pathComponent.index - 1] != null) {
+                        pathComponent.dwarfsSlots[pathComponent.index - 1].dwarfsAlreadyIn--;
+                        pathComponent.dwarfsSlots[pathComponent.index - 1].dwarfsInside
+                            .Remove(dwarfsInventoryComponent);
+
+                    }
+
+                    receiverComponent.nbDwarfsAttributed++;
+
+                    dwarfsInventoryComponent.resourceType = receiverComponent.resourceType;
+
+                    //Go to closet storage
+                    pathComponent.nodes = aStarSystem.GetPath(dwarfsTransform,
+                        passiveInventoryTransformsComponents[indexPassiveInventory]);
                     pathComponent.dwarfsSlots = new DwarfsSlots[pathComponent.nodes.Length];
-                    pathComponent.dwarfsSlots[pathComponent.nodes.Length - 1] = receiverDwarfsSlots;
+                    pathComponent.dwarfsSlots[pathComponent.nodes.Length - 1] = passiveInventoryDwarfsSlotsComponents[indexPassiveInventory];
                     pathComponent.index = 0;
 
+                    //Then go to giver
+                    GraphNodeComponent[] path2 = aStarSystem.GetPath(passiveInventoryTransformsComponents[indexPassiveInventory], receiverBuildingTransformsComponent);
+                    DwarfsSlots[] slots2 = new DwarfsSlots[path2.Length];
+                    slots2[path2.Length - 1] = receiverDwarfsSlots;
+
+                    pathComponent.nodes = pathComponent.nodes.Concat(path2).ToArray();
+                    pathComponent.dwarfsSlots = pathComponent.dwarfsSlots.Concat(slots2).ToArray();
                     break;
                 }
             }

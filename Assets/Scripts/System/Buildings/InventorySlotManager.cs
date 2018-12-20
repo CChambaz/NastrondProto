@@ -114,8 +114,16 @@ namespace Nastrond {
                     if(passiveInventoryComponent != null && passiveInventoryComponent.Length > 0) {
                         foreach(PassiveInventoryComponent component in passiveInventoryComponent) {
                             if(component.resourceType == inventoryComponent.resourceType) {
-                                component.amount += inventoryComponent.amount;
-                                inventoryComponent.amount = 0;
+                                if (inventoryComponent.amount == 0) {
+                                    inventoryComponent.amount = inventoryComponent.maxCapacity;
+                                    component.amount -= inventoryComponent.amount;
+                                }
+                                else {
+                                    component.amount += inventoryComponent.amount;
+                                    inventoryComponent.amount = 0;
+                                }
+
+                                dwarfsSlotsComponent.dwarfsInside.Remove(inventoryComponent);
                                 break;
                             }
                         }
