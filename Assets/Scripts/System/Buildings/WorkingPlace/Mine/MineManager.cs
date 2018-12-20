@@ -6,7 +6,7 @@ namespace Nastrond
 {
     public class MineManager : System
     {
-        private const int FramesPerSecond = 50;
+        private const int framesPerSecond = 50;
         private const int secondPerMinute = 60;
 
         private IronProducer[] ironProducers;
@@ -61,7 +61,7 @@ namespace Nastrond
                 return;
 
             if (ironProducer.timeSinceLastProduction >=
-                ironProducer.productionEveryXMinutes * FramesPerSecond * secondPerMinute ||
+                ironProducer.productionEveryXMinutes * framesPerSecond * secondPerMinute ||
                 ironGiver.amount < ironGiver.maxCapacity)
             {
                 ironGiver.amount += (ironProducer.productionPerMinute * dwarfsSlots.dwarfsAlreadyIn);
@@ -71,7 +71,6 @@ namespace Nastrond
             {
                 ironProducer.timeSinceLastProduction++;
             }
-
         }
     }
 }
