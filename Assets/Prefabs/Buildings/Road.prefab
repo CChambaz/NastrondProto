@@ -41,6 +41,7 @@ GameObject:
   - component: {fileID: 6805316361531107084}
   - component: {fileID: 7144798814814230372}
   - component: {fileID: 719896771450624044}
+  - component: {fileID: 7192552063056492123}
   m_Layer: 0
   m_Name: 1X1
   m_TagString: Untagged
@@ -132,6 +133,19 @@ MonoBehaviour:
   TCorner: {fileID: 6138419748498168248}
   DCorner: {fileID: 4050926165679695394}
   center: {fileID: 5551483209926466601}
+--- !u!114 &7192552063056492123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3422355933997264191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e742f446123538468d8cc46a98d0158, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tileBase: {fileID: 11400000, guid: 3caa43e491d3c8d40a6a6593b454d161, type: 2}
 --- !u!1 &5612802094289222602
 GameObject:
   m_ObjectHideFlags: 0

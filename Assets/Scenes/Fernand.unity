@@ -567,6 +567,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridLayout: {fileID: 1237758365}
+  buildingTilemap: {fileID: 1237758365}
 --- !u!1 &1237758362
 GameObject:
   m_ObjectHideFlags: 0
