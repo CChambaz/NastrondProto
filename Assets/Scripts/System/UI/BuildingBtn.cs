@@ -8,7 +8,10 @@ public class BuildingBtn : MonoBehaviour
     
    
     private GameObject tmpBuildingRef;
+    private TileBase tmpTileBaseRef;
+
     public GridLayout gridLayout;
+    public Tilemap buildingTilemap;
     private Coroutine dragCoroutine;
     private bool actionCancelled=false;
     private bool actionValidate = false;
@@ -31,8 +34,8 @@ public class BuildingBtn : MonoBehaviour
     public void SelectBuilding(GameObject buildingRef)
     {
         tmpBuildingRef = buildingRef;
-        if (dragCoroutine==null)
-            dragCoroutine=StartCoroutine(OnDragBuilding());
+        if (dragCoroutine == null)
+            dragCoroutine = StartCoroutine(OnDragBuilding());
     }
     public void Update()
     {
@@ -41,7 +44,7 @@ public class BuildingBtn : MonoBehaviour
            actionValidate = true; 
         }
 
-        if (Input.GetMouseButtonDown(1)&&dragCoroutine!=null)
+        if (Input.GetMouseButtonDown(1) && dragCoroutine != null)
         {
             actionCancelled = true;
         }
@@ -57,13 +60,18 @@ public class BuildingBtn : MonoBehaviour
         {
             mousePositionInWorldPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             float x = (float)System.Math.Round(mousePositionInWorldPoint.x * 2f, System.MidpointRounding.AwayFromZero)/ 2f;//Mathf.RoundToInt(mousePositionInWorldPoint.x);
-            float y = (float)System.Math.Round(mousePositionInWorldPoint.y * 2f, System.MidpointRounding.AwayFromZero)/2f-0.25f;
+            float y = (float)System.Math.Round(mousePositionInWorldPoint.y * 2f, System.MidpointRounding.AwayFromZero)/ 2f - 0.25f;
             if (x % 1 != 0)
                 y += 0.25f;
-            Vector3 cellPosition = gridLayout.LocalToCellInterpolated(new Vector3(x, y, 0));
-           
-            tmpBuilding.transform.position = gridLayout.CellToLocalInterpolated(cellPosition);
-           
+            //Vector3 cellPosition = gridLayout.LocalToCellInterpolated(new Vector3(x, y, 0));
+            Vector3Int cellBuildingPosition = buildingTilemap.WorldToCell(new Vector3(x, y, 0));
+
+            //tmpBuilding.transform.position = gridLayout.CellToLocalInterpolated(cellPosition);
+            Vector3 newPosition = buildingTilemap.CellToLocalInterpolated(cellBuildingPosition);
+
+            newPosition.y += 0.25f;
+            tmpBuilding.transform.position = newPosition;
+
             if (dragNDrop.cityBuildings != null)
             {
                 BuildingLimits tmpBuildingLimit = tmpBuilding.GetComponent<BuildingLimits>();
@@ -96,10 +104,15 @@ public class BuildingBtn : MonoBehaviour
             if (actionValidate)
             {
                 dragNDrop.AddCityBuilding(tmpBuilding);
+                cellBuildingPosition = buildingTilemap.WorldToCell(new Vector3(x, y, 0));
+                buildingTilemap.SetTile(cellBuildingPosition, tmpBuildingRef.GetComponent<BuildingTile>().tileBase);
+                tmpBuilding.GetComponent<SpriteRenderer>().enabled = false;
                 tmpBuilding = Instantiate(tmpBuildingRef);
                 actionValidate = false;
             }
         }
+        // Stop la coroutine
+        StopCoroutine(OnDragBuilding());
         dragCoroutine = null;
     }
 
