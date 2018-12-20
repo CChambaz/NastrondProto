@@ -45,10 +45,8 @@ namespace Nastrond
 
             for (int i = 0; i < number; i++)
             {
-                /*
-                 * // TODO:
-                 * // Actually creat a dwarf
-                */
+                FindObjectOfType<DwarfsWorkerFactory>().Spawn(Vector2.zero);
+                Debug.Log("spawn");
             }
         }
 

@@ -19,6 +19,7 @@ namespace Nastrond
 
         public DwellingSlotIndexComponent[] attributedDwellingsSlotIndexComponent;
         public List<InventoryComponent> dwarfsInside;
+        public WorkingSlotIndexComponent[] attributedWorkingsSlotIndexComponent;
 
         private void Start()
         {
@@ -27,12 +28,17 @@ namespace Nastrond
                 FindObjectOfType<GrowthSystem>().RegisterDwelling(this);
 
             attributedDwellingsSlotIndexComponent = new DwellingSlotIndexComponent[maxNumberSlots];
-            FindObjectOfType<DwellingSlotsManager>().newDwelling(this);
+            attributedWorkingsSlotIndexComponent = new WorkingSlotIndexComponent[maxNumberSlots];
+            if(buildingType == BuildingType.DWELLING)
+                FindObjectOfType<DwellingSlotsManager>().newDwelling(this);
+            else if (buildingType == BuildingType.WORKING_PLACE)
+                FindObjectOfType<WorkingSlotsManager>().NewWorkingPlace(this);
         }
 
         private void OnDestroy()
         {
             if(buildingType == BuildingType.DWELLING)
+                if(FindObjectOfType<GrowthSystem>())
                 FindObjectOfType<GrowthSystem>().UnregisterDwelling(this);
         }
     }

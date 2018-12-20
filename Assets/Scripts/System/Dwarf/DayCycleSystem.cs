@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace Nastrond {
@@ -142,6 +143,44 @@ namespace Nastrond {
                 pathComponent.dwarfsSlots = new DwarfsSlots[pathComponent.nodes.Length];
                 pathComponent.dwarfsSlots[pathComponent.nodes.Length -1] = workingSlotIndexComponent.dwarfsSlots;
             }
+        }
+
+        public void AddEntity(GameObject entity)
+        {
+            List<PathComponent> newPathList = pathComponents.ToList();
+            if(entity.GetComponent<PathComponent>()) {
+                newPathList.Add(entity.GetComponent<PathComponent>());
+            }
+
+            pathComponents = newPathList.ToArray();
+
+            List<Transform> newTransformList = dwarfsTransformComponents.ToList();
+            if(entity.GetComponent<Transform>()) {
+                newTransformList.Add(entity.GetComponent<Transform>());
+            }
+
+            dwarfsTransformComponents = newTransformList.ToArray();
+
+            List<InventoryComponent> newInventoryList = inventoryComponents.ToList();
+            if(entity.GetComponent<InventoryComponent>()) {
+                newInventoryList.Add(entity.GetComponent<InventoryComponent>());
+            }
+
+            inventoryComponents = newInventoryList.ToArray();
+
+            List<DwellingSlotIndexComponent> newDeDwellingSlotIndexComponents = dwellingSlotIndexComponents.ToList();
+            if (entity.GetComponent<DwellingSlotIndexComponent>()) {
+                newDeDwellingSlotIndexComponents.Add(entity.GetComponent<DwellingSlotIndexComponent>());
+            }
+
+            dwellingSlotIndexComponents = newDeDwellingSlotIndexComponents.ToArray();
+
+            List<WorkingSlotIndexComponent> newWorkingSlotIndexComponents = workingSlotIndexComponents.ToList();
+            if(entity.GetComponent<WorkingSlotIndexComponent>()) {
+                newWorkingSlotIndexComponents.Add(entity.GetComponent<WorkingSlotIndexComponent>());
+            }
+
+            workingSlotIndexComponents = newWorkingSlotIndexComponents.ToArray();
         }
     }
 }

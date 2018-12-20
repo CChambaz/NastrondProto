@@ -49,6 +49,9 @@ namespace Nastrond
 
         public void newDwelling(DwarfsSlots dwarfsSlots)
         {
+            if(dwarfsSlots.buildingType == DwarfsSlots.BuildingType.WORKING_PLACE)
+                return;
+
             IncreaseDwellingSlotsComponentSizeAndAttribute(dwarfsSlots);
 
             foreach(DwellingSlotIndexComponent dwellingSlotIndexComponent in dwellingSlotIndexComponents) {

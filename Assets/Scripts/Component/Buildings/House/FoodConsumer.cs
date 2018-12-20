@@ -2,13 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 namespace Nastrond
 {
-    public class FoodInventory : Component
+    public class FoodConsumer : MonoBehaviour
     {
-        public int maxFoodCapacity = 100;
-        public int foodStoredIn = 50;
-
         public int timeSinceLastConsumption = 0;
         public float minuteBeforConsuming = 2;
 
