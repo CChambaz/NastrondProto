@@ -33,6 +33,7 @@ namespace Nastrond
         private void OnDestroy()
         {
             if(buildingType == BuildingType.DWELLING)
+                if(FindObjectOfType<GrowthSystem>())
                 FindObjectOfType<GrowthSystem>().UnregisterDwelling(this);
         }
     }

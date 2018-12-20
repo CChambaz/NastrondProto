@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEditor.MemoryProfiler;
 using UnityEngine;
 
@@ -53,7 +54,7 @@ namespace Nastrond
                 Transform transformComponent = transformComponents[index];
                 InventoryComponent inventoryComponent = inventoryComponents[index];
 
-                if (pathComponent.nodes.Length == 0) {
+                if (pathComponent.nodes == null || pathComponent.nodes.Length == 0) {
                     continue;
                 }
 
@@ -103,6 +104,37 @@ namespace Nastrond
                 
                 motionComponent.speed = Mathf.Clamp(speed, 0, motionComponent.maxSpeed);
             }
+        }
+
+        public void AddEntity(GameObject entity)
+        {
+            List<PathComponent> newPathList = pathComponents.ToList();
+            if (entity.GetComponent<PathComponent>()) {
+                newPathList.Add(entity.GetComponent<PathComponent>());
+            }
+
+            pathComponents = newPathList.ToArray();
+
+            List<MotionComponent> newMotionList = motionComponents.ToList();
+            if(entity.GetComponent<PathComponent>()) {
+                newMotionList.Add(entity.GetComponent<MotionComponent>());
+            }
+
+            motionComponents = newMotionList.ToArray();
+
+            List<Transform> newTransformList = transformComponents.ToList();
+            if(entity.GetComponent<Transform>()) {
+                newTransformList.Add(entity.GetComponent<Transform>());
+            }
+
+            transformComponents = newTransformList.ToArray();
+
+            List<InventoryComponent> newInventoryList = inventoryComponents.ToList();
+            if(entity.GetComponent<InventoryComponent>()) {
+                newInventoryList.Add(entity.GetComponent<InventoryComponent>());
+            }
+
+            inventoryComponents = newInventoryList.ToArray();
         }
     }
 }
