@@ -5,5 +5,6 @@ namespace Nastrond {
 
         [Header("Velocity Camera")]
         public float velocity;
+        public float multiplyVelocity;
     }
 }
