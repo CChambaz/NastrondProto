@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace Nastrond {
@@ -35,6 +36,10 @@ namespace Nastrond {
             else {
                 timer -= Time.deltaTime;
             }
+        }
+
+        public void AddEntity(GameObject entity) {
+            motionComponents.Add(entity.GetComponent<MotionComponent>());
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace Nastrond
@@ -53,6 +54,23 @@ namespace Nastrond
                 }
                 Debug.Log("time = " + (Time.realtimeSinceStartup - time));
             }
+        }
+
+        public void AddEntity(GameObject entity)
+        {
+            List<PathComponent> newPathList = pathComponents.ToList();
+            if(entity.GetComponent<PathComponent>()) {
+                newPathList.Add(entity.GetComponent<PathComponent>());
+            }
+
+            pathComponents = newPathList.ToArray();
+
+            List<Transform> newTransformList = transformComponents.ToList();
+            if(entity.GetComponent<Transform>()) {
+                newTransformList.Add(entity.GetComponent<Transform>());
+            }
+
+            transformComponents = newTransformList.ToArray();
         }
     }
 }

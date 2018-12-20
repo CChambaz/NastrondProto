@@ -86,10 +86,10 @@ namespace Nastrond {
                     GraphNodeComponent currentNeighbor = neighbor.GetComponent<GraphNodeComponent>();
                     float distance = Vector2.Distance(current.position.position, currentNeighbor.position.position);
 
-                    float newCost = costSoFar[current] + distance + current.cost;
+                    float newCost = costSoFar[current] + current.cost + distance;
 
                     if(!costSoFar.ContainsKey(currentNeighbor) || newCost < costSoFar[currentNeighbor]) {
-                        float priority = newCost + distance;
+                        float priority = newCost + Vector2.Distance(currentNeighbor.position.position, nodeTarget.position.position);
                         openNode.Enqueue(currentNeighbor, priority);
 
 
