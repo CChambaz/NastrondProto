@@ -14,7 +14,7 @@ namespace Nastrond
         int coalAmount = 0;
         int toolAmount = 0;
  
-        List<InventoryComponent> inventoryComponentList = new List<InventoryComponent>();
+        List<PassiveInventoryComponent> inventoryComponentList = new List<PassiveInventoryComponent>();
 
         // Update is called once per frame
         void Update()
@@ -26,7 +26,7 @@ namespace Nastrond
             int totalAmountCoal = 0;
             int totalAmountTool = 0;
 
-            foreach(InventoryComponent i in inventoryComponentList)
+            foreach(PassiveInventoryComponent i in inventoryComponentList)
             {
                 switch(i.resourceType)
                 {
@@ -59,12 +59,12 @@ namespace Nastrond
             toolAmount = totalAmountTool;
         }
 
-        public void RegisterInventory(InventoryComponent i)
+        public void RegisterInventory(PassiveInventoryComponent i)
         {
             inventoryComponentList.Add(i);
         }
 
-        public void UnregisterInventory(InventoryComponent i)
+        public void UnregisterInventory(PassiveInventoryComponent i)
         {
             inventoryComponentList.Remove(i);
         }

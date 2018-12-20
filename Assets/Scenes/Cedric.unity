@@ -12329,11 +12329,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 452306477}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08558bd83cf7dee49b933b1397a25892, type: 3}
+  m_Script: {fileID: 11500000, guid: c3836a4665d0d894197dd3d76b6498a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amount: 2682
-  maxCapacity: 2000
+  amount: 716
+  maxCapacity: 0
   resourceType: 5
 --- !u!1001 &456640433
 PrefabInstance:
@@ -15144,11 +15144,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 537432298}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08558bd83cf7dee49b933b1397a25892, type: 3}
+  m_Script: {fileID: 11500000, guid: c3836a4665d0d894197dd3d76b6498a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amount: 7506
-  maxCapacity: 2000
+  amount: 27456
+  maxCapacity: 0
   resourceType: 2
 --- !u!1001 &540806518
 PrefabInstance:
@@ -16727,11 +16727,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 578482058}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08558bd83cf7dee49b933b1397a25892, type: 3}
+  m_Script: {fileID: 11500000, guid: c3836a4665d0d894197dd3d76b6498a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amount: 15000
-  maxCapacity: 2000
+  amount: 15892
+  maxCapacity: 0
   resourceType: 1
 --- !u!1001 &578790787
 PrefabInstance:
@@ -18098,11 +18098,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 625698619}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08558bd83cf7dee49b933b1397a25892, type: 3}
+  m_Script: {fileID: 11500000, guid: c3836a4665d0d894197dd3d76b6498a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amount: 5689
-  maxCapacity: 2000
+  amount: 3675
+  maxCapacity: 0
   resourceType: 3
 --- !u!1001 &627797920
 PrefabInstance:
@@ -25169,11 +25169,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 916068038}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08558bd83cf7dee49b933b1397a25892, type: 3}
+  m_Script: {fileID: 11500000, guid: c3836a4665d0d894197dd3d76b6498a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amount: 358
-  maxCapacity: 2000
+  amount: 271
+  maxCapacity: 0
   resourceType: 4
 --- !u!1001 &918764618
 PrefabInstance:
@@ -50832,11 +50832,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1927497946}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08558bd83cf7dee49b933b1397a25892, type: 3}
+  m_Script: {fileID: 11500000, guid: c3836a4665d0d894197dd3d76b6498a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amount: 586
-  maxCapacity: 2000
+  amount: 142
+  maxCapacity: 0
   resourceType: 6
 --- !u!1001 &1931890170
 PrefabInstance:
