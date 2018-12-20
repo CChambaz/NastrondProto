@@ -3,9 +3,8 @@
 namespace Nastrond {
    public class PathComponent : Component {
        public GraphNodeComponent[] nodes;
+       public DwarfsSlots[] dwarfsSlots;
        public int index = 0;
-
-       public DwarfsSlots dwarfsSlotDestination;
 
        void OnDrawGizmos()
        {

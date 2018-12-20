@@ -8,7 +8,8 @@ namespace Nastrond
 
         public enum BuildingType {
             DWELLING,
-            WORKING_PLACE
+            WORKING_PLACE,
+            INVENTORY
         }
         public BuildingType buildingType = BuildingType.WORKING_PLACE;
 
@@ -17,9 +18,11 @@ namespace Nastrond
         public int dwarfsAlreadyIn = 0;
 
         public DwellingSlotIndexComponent[] attributedDwellingsSlotIndexComponent;
+        public List<InventoryComponent> dwarfsInside;
 
         private void Start()
         {
+            dwarfsInside = new List<InventoryComponent>();
             if (buildingType == BuildingType.DWELLING)
                 FindObjectOfType<GrowthSystem>().RegisterDwelling(this);
 
