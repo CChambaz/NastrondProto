@@ -45,7 +45,7 @@ namespace Nastrond
 
             for (int i = 0; i < number; i++)
             {
-                FindObjectOfType<DwarfsWorkerFactory>().Spawn(Vector2.zero);
+                FindObjectOfType<EntityFactory>().SpawnDwarfWorker(Vector2.zero);
                 Debug.Log("spawn");
             }
         }

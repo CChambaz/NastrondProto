@@ -14,7 +14,6 @@ namespace Nastrond
         PathComponent[] pathComponents;
         Transform[] dwarfsTransformComponents;
         InventoryComponent[] dwarfsInventoryComponents;
-        DwarfsSlots[] dwarfsInventorySlotComponents;
 
         //Building Give
         DwarfsSlots[] giverDwarfsSlotComponents;
@@ -116,7 +115,7 @@ namespace Nastrond
                 
                 for (int i = 0; i < pathComponents.Length; i++) {
                     PathComponent pathComponent = pathComponents[i];
-                    if (pathComponent.nodes.Length != 0) continue;
+                    if (pathComponent != null && pathComponent.nodes.Length != 0) continue;
 
                     Transform giverBuildingTransformsComponent = giverTransformComponents[index];
                     DwarfsSlots giverDwarfsSlots = giverDwarfsSlotComponents[index];
@@ -233,6 +232,29 @@ namespace Nastrond
             }
 
             return minIndex;
+        }
+
+        public void AddEntity(GameObject entity) {
+            List<Transform> newTransformList = dwarfsTransformComponents.ToList();
+            if(entity.GetComponent<Transform>()) {
+                newTransformList.Add(entity.GetComponent<Transform>());
+            }
+
+            dwarfsTransformComponents = newTransformList.ToArray();
+
+            List<InventoryComponent> newInventoryList = dwarfsInventoryComponents.ToList();
+            if(entity.GetComponent<InventoryComponent>()) {
+                newInventoryList.Add(entity.GetComponent<InventoryComponent>());
+            }
+
+            dwarfsInventoryComponents = newInventoryList.ToArray();
+
+            List<PathComponent> newPathList = pathComponents.ToList();
+            if(entity.GetComponent<PathComponent>()) {
+                newPathList.Add(entity.GetComponent<PathComponent>());
+            }
+
+            pathComponents = newPathList.ToArray();
         }
     }
 }
