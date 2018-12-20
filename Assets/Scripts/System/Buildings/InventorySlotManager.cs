@@ -61,7 +61,8 @@ namespace Nastrond {
                     continue;
                 }
 
-                foreach (InventoryComponent inventoryComponent in dwarfsSlotsComponent.dwarfsInside) {
+                for (int i = 0; i < dwarfsSlotsComponent.dwarfsInside.Count; i++) {
+                    InventoryComponent inventoryComponent = dwarfsSlotsComponent.dwarfsInside[i];
                     bool found = false;
 
                     foreach (InventoryComponent component in dwarfsSlotsComponent.dwarfsInside) {
@@ -81,18 +82,18 @@ namespace Nastrond {
 
                     if (giverComponent != null && giverComponent.Length > 0) {
                         foreach (GiverComponent component in giverComponent) {
-                            if (component.nbDwarfsAttributed > 0 && component.resourceType == inventoryComponent.resourceType) {
-                                if(inventoryComponent.amount >= inventoryComponent.maxCapacity)
-                                {
+                            if (component.nbDwarfsAttributed > 0 &&
+                                component.resourceType == inventoryComponent.resourceType) {
+                                if (inventoryComponent.amount >= inventoryComponent.maxCapacity) {
                                     continue;
                                 }
 
                                 if (component.amount < inventoryComponent.maxCapacity) {
                                     inventoryComponent.amount = component.amount;
-                                }
-                                else {
+                                } else {
                                     inventoryComponent.amount = inventoryComponent.maxCapacity;
                                 }
+
                                 component.amount -= inventoryComponent.amount;
                                 component.nbDwarfsAttributed--;
                                 break;
@@ -100,9 +101,10 @@ namespace Nastrond {
                         }
                     }
 
-                    if(receiverComponent != null && receiverComponent.Length > 0) {
-                        foreach(ReceiverComponent component in receiverComponent) {
-                            if(component.nbDwarfsAttributed > 0 && component.resourceType == inventoryComponent.resourceType) {
+                    if (receiverComponent != null && receiverComponent.Length > 0) {
+                        foreach (ReceiverComponent component in receiverComponent) {
+                            if (component.nbDwarfsAttributed > 0 &&
+                                component.resourceType == inventoryComponent.resourceType) {
                                 component.amount += inventoryComponent.amount;
                                 inventoryComponent.amount = 0;
                                 component.nbDwarfsAttributed--;
@@ -111,14 +113,13 @@ namespace Nastrond {
                         }
                     }
 
-                    if(passiveInventoryComponent != null && passiveInventoryComponent.Length > 0) {
-                        foreach(PassiveInventoryComponent component in passiveInventoryComponent) {
-                            if(component.resourceType == inventoryComponent.resourceType) {
+                    if (passiveInventoryComponent != null && passiveInventoryComponent.Length > 0) {
+                        foreach (PassiveInventoryComponent component in passiveInventoryComponent) {
+                            if (component.resourceType == inventoryComponent.resourceType) {
                                 if (inventoryComponent.amount == 0) {
                                     inventoryComponent.amount = inventoryComponent.maxCapacity;
                                     component.amount -= inventoryComponent.amount;
-                                }
-                                else {
+                                } else {
                                     component.amount += inventoryComponent.amount;
                                     inventoryComponent.amount = 0;
                                 }

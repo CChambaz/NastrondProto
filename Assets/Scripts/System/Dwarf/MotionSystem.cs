@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace Nastrond {
@@ -32,6 +33,23 @@ namespace Nastrond {
                 Transform trans = transformComponents[index];
                 trans.position += Time.deltaTime * (Vector3) motionComponent.direction.normalized * motionComponent.speed;
             }
+        }
+
+        public void AddEntity(GameObject entity)
+        {
+            List<Transform> newTransformList = transformComponents.ToList();
+            if(entity.GetComponent<Transform>()) {
+                newTransformList.Add(entity.GetComponent<Transform>());
+            }
+
+            transformComponents = newTransformList.ToArray();
+
+            List<MotionComponent> newMotionList = motionComponents.ToList();
+            if(entity.GetComponent<InventoryComponent>()) {
+                newMotionList.Add(entity.GetComponent<MotionComponent>());
+            }
+
+            motionComponents = newMotionList.ToArray();
         }
     }
 }
