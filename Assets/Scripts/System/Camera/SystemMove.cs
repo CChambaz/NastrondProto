@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Text;
 using UnityEngine;
 
 namespace Nastrond {
@@ -19,13 +20,15 @@ namespace Nastrond {
 
             //Get Entity Contain ComponentMove
             foreach (GameObject e in tmpEntities) {
-                if (e.GetComponent<ComponentMove>() == null || e.GetComponent<ComponentMap>() == null) {
-                    continue;
+                if (e.GetComponent<ComponentMove>() != null) {
+                    moveComponents.Add(e.GetComponent<ComponentMove>());
+                    transformComponents.Add(e.GetComponent<Transform>());
                 }
 
-                moveComponents.Add(e.GetComponent<ComponentMove>());
-                mapComponents.Add(e.GetComponent<ComponentMap>());
-                transformComponents.Add(e.GetComponent<Transform>());
+                if (e.GetComponent<ComponentMap>() != null)
+                {
+                    mapComponents.Add(e.GetComponent<ComponentMap>());
+                }
             }
         }
 
@@ -35,7 +38,6 @@ namespace Nastrond {
              * SFGE ce ne sera pas possible de faire comme ça
              */
             Vector2 sizeDisplay = new Vector2(Display.main.renderingWidth, Display.main.renderingHeight);
-
             for (int index = 0; index < moveComponents.Count; index++) {
                 ComponentMove moveComponent = moveComponents[index];
                 ComponentMap mapComponent = mapComponents[index];
@@ -53,25 +55,53 @@ namespace Nastrond {
                     Vector2 dir = new Vector2();
                     if (cameraPosition.y > mapComponent.offSet.y) {
                         if (mousePosition.y < sizeDisplay.y / 100 * 15) {
-                            dir.y = -1;
+                            if (mousePosition.y < sizeDisplay.y / 100 * 5)
+                            {
+                                dir.y = -moveComponent.multiplyVelocity;
+                            }
+                            else
+                            {
+                                dir.y = -1;
+                            }
                         }
                     }
 
                     if (cameraPosition.y < mapComponent.offSet.y + mapComponent.sizeMap.y) {
                         if (mousePosition.y > sizeDisplay.y / 100 * 85) {
-                            dir.y = 1;
+                            if (mousePosition.y > sizeDisplay.y / 100 * 95)
+                            {
+                                dir.y = moveComponent.multiplyVelocity;
+                            }
+                            else
+                            {
+                                dir.y = 1;
+                            }
                         }
                     }
 
                     if (cameraPosition.x > mapComponent.offSet.x) {
                         if (mousePosition.x < sizeDisplay.x / 100 * 15) {
-                            dir.x = -1;
+                            if (mousePosition.x < sizeDisplay.x / 100 * 5)
+                            {
+                                dir.x = -moveComponent.multiplyVelocity;
+                            }
+                            else
+                            {
+                                dir.x = -1;
+                            }
                         }
                     }
 
                     if (cameraPosition.x < mapComponent.offSet.x + mapComponent.sizeMap.x) {
                         if (mousePosition.x > sizeDisplay.x / 100 * 85) {
-                            dir.x = 1;
+                            if (mousePosition.x > sizeDisplay.x / 100 * 95)
+                            {
+                                dir.x = moveComponent.multiplyVelocity;
+                            }
+                            else
+                            {
+                                dir.x = 1;
+                            }
                         }
                     }
 
