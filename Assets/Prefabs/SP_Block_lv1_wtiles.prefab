@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 366891935592690281}
   - component: {fileID: 8941598805638631781}
   - component: {fileID: 6426355948882946731}
+  - component: {fileID: 8599627112600414463}
   m_Layer: 0
   m_Name: SP_Block_lv1_wtiles
   m_TagString: Untagged
@@ -102,6 +103,19 @@ MonoBehaviour:
   TCorner: {fileID: 1763316478097004141}
   DCorner: {fileID: 3504004095440912789}
   center: {fileID: 7964467622585423084}
+--- !u!114 &8599627112600414463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 31505836811566861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e742f446123538468d8cc46a98d0158, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tileBase: {fileID: 11400000, guid: b8839373ccd5b3e4d97b2413a4abe573, type: 2}
 --- !u!1 &1745215472920887339
 GameObject:
   m_ObjectHideFlags: 0
