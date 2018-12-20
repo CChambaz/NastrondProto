@@ -50,8 +50,6 @@ namespace Nastrond
 
             StoneText.text = "Stone amount : " + totalAmountStone;
             FoodText.text = "Food amount : " + totalAmountFood;
-            Debug.Log("total food amount : " + totalAmountFood);
-            Debug.Log("total stone amount : " + totalAmountStone);
         }
 
         public void ShowResources(bool newValue)
