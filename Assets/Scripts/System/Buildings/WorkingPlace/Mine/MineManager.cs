@@ -10,40 +10,40 @@ namespace Nastrond
         private const int secondPerMinute = 60;
 
         private IronProducer[] ironProducers;
-        private IronInventory[] ironInventories;
+        private GiverComponent[] ironGivers;
         private DwarfsSlots[] workingSlots;
 
         void Start()
         {
             ironProducers = new IronProducer[0];
-            ironInventories = new IronInventory[0];
+            ironGivers = new GiverComponent[0];
             workingSlots = new DwarfsSlots[0];
         }
 
         public void NewMine(Entity entity)
         {
-            addNewMine(entity.GetComponent<IronProducer>(), entity.GetComponent<IronInventory>(), entity.GetComponent<DwarfsSlots>());
+            addNewMine(entity.GetComponent<IronProducer>(), entity.GetComponent<GiverComponent>(), entity.GetComponent<DwarfsSlots>());
         }
 
-        private void addNewMine(IronProducer ironProducer, IronInventory ironInventory, DwarfsSlots dwarfsSlots)
+        private void addNewMine(IronProducer ironProducer, GiverComponent ironGiver, DwarfsSlots dwarfsSlots)
         {
             IronProducer[] tmpIronProducers = new IronProducer[ironProducers.Length + 1];
-            IronInventory[] tmpIronInventories = new IronInventory[ironInventories.Length + 1];
+            GiverComponent[] tmpIronGivers = new GiverComponent[ironGivers.Length + 1];
             DwarfsSlots[] tmpDwarfsSlots = new DwarfsSlots[workingSlots.Length + 1];
-
+            
             for (int i = 0; i < ironProducers.Length; i++)
             {
                 tmpIronProducers[i] = ironProducers[i];
-                tmpIronInventories[i] = ironInventories[i];
+                tmpIronGivers[i] = ironGivers[i];
                 tmpDwarfsSlots[i] = workingSlots[i];
             }
 
             tmpIronProducers[tmpIronProducers.Length - 1] = ironProducer;
-            tmpIronInventories[tmpIronProducers.Length - 1] = ironInventory;
+            tmpIronGivers[tmpIronProducers.Length - 1] = ironGiver;
             tmpDwarfsSlots[tmpDwarfsSlots.Length - 1] = dwarfsSlots;
 
             ironProducers = tmpIronProducers;
-            ironInventories = tmpIronInventories;
+            ironGivers = tmpIronGivers;
             workingSlots = tmpDwarfsSlots;
         }
 
@@ -51,20 +51,20 @@ namespace Nastrond
         {
             for (int index = 0; index < ironProducers.Length; index++)
             {
-                Produce(ironProducers[index], ironInventories[index], workingSlots[index]);
+                Produce(ironProducers[index], ironGivers[index], workingSlots[index]);
             }
         }
 
-        private void Produce(IronProducer ironProducer, IronInventory ironInventory, DwarfsSlots dwarfsSlots)
+        private void Produce(IronProducer ironProducer, GiverComponent ironGiver, DwarfsSlots dwarfsSlots)
         {
-            if(!ironProducer || !ironInventory || !dwarfsSlots)
+            if(!ironProducer || !ironGiver || !dwarfsSlots)
                 return;
 
             if (ironProducer.timeSinceLastProduction >=
                 ironProducer.productionEveryXMinutes * FramesPerSecond * secondPerMinute ||
-                ironInventory.ironStoredIn < ironInventory.IronMaxCapacity)
+                ironGiver.amount < ironGiver.maxCapacity)
             {
-                ironInventory.ironStoredIn += (ironProducer.productionPerMinute * dwarfsSlots.dwarfsAlreadyIn);
+                ironGiver.amount += (ironProducer.productionPerMinute * dwarfsSlots.dwarfsAlreadyIn);
                 ironProducer.timeSinceLastProduction = 0;
             }
             else

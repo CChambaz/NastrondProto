@@ -8,7 +8,8 @@ namespace Nastrond
     {
         NULL,
         FOOD,
-        STONE
+        STONE,
+        IRON
     }
 
     public class InventoryComponent : Component

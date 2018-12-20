@@ -6,83 +6,71 @@ namespace Nastrond
 {
     public class DwellingConsumptionManager : System {
 
-        private FoodInventory[] foodInventorys;
+        private ReceiverComponent[] recieverFoods;
         private DwarfsSlots[] dwellingSlots;
+        private FoodConsumer[] foodConsumers;
 
         private const int FramesPerSecond = 50;
         private const int secondPerMinute = 60;
 
         private void Start() {
-            //Entity[] entitys = FindObjectsOfType<Entity>();
-
-            //List<FoodInventory> tmpFoodInventorys = new List<FoodInventory>();
-
-            //foreach(Entity entity in entitys)
-            //{
-            //    FoodInventory tmpFoodInventory = entity.GetComponent<FoodInventory>();
-
-            //    if(tmpFoodInventory != null)
-            //    {
-            //        tmpFoodInventorys.Add(tmpFoodInventory);
-            //    }
-            //}
-
-            //foodInventorys = new FoodInventory[tmpFoodInventorys.Count];
-
-            //for(int i = 0;i < tmpFoodInventorys.Count;i++)
-            //{
-            //    foodInventorys[i] = tmpFoodInventorys[i];
-            //}
             dwellingSlots = new DwarfsSlots[0];
-            foodInventorys = new FoodInventory[0];
+            recieverFoods = new ReceiverComponent[0];
+            foodConsumers = new FoodConsumer[0];
         }
 
         public void newDwelling(Entity entity)
         {
-            addNewDwellingsSlotsAndFoodInventory(entity.GetComponent<FoodInventory>(), entity.GetComponent<DwarfsSlots>());
+            addNewDwellingsSlotsAndFoodInventory(entity.GetComponent<ReceiverComponent>(), entity.GetComponent<DwarfsSlots>(), entity.GetComponent<FoodConsumer>());
         }
 
-        private void addNewDwellingsSlotsAndFoodInventory(FoodInventory foodInventory, DwarfsSlots dwarfsSlots)
+        private void addNewDwellingsSlotsAndFoodInventory(ReceiverComponent recieverComponent, DwarfsSlots dwarfsSlots, FoodConsumer foodConsumer)
         {
-            FoodInventory[] tmpFoodInventory = new FoodInventory[foodInventorys.Length + 1];
+            ReceiverComponent[] tmpFoodReceiever = new ReceiverComponent[recieverFoods.Length + 1];
             DwarfsSlots[] tmpDwarfsSlots = new DwarfsSlots[dwellingSlots.Length + 1];
+            FoodConsumer[] tmpFoodConsumers = new FoodConsumer[foodConsumers.Length + 1];
 
-            for (int i = 0; i < foodInventorys.Length; i++)
+
+
+            for (int i = 0; i < recieverFoods.Length; i++)
             {
-                tmpFoodInventory[i] = foodInventorys[i];
+                tmpFoodReceiever[i] = recieverFoods[i];
                 tmpDwarfsSlots[i] = dwellingSlots[i];
+                tmpFoodConsumers[i] = foodConsumers[i];
             }
 
-            tmpFoodInventory[tmpFoodInventory.Length - 1] = foodInventory;
+            tmpFoodReceiever[tmpFoodReceiever.Length - 1] = recieverComponent;
             tmpDwarfsSlots[tmpDwarfsSlots.Length - 1] = dwarfsSlots;
+            tmpFoodConsumers[tmpFoodConsumers.Length - 1] = foodConsumer;
 
-            foodInventorys = tmpFoodInventory;
+            recieverFoods = tmpFoodReceiever;
             dwellingSlots = tmpDwarfsSlots;
+            foodConsumers = tmpFoodConsumers;
         }
 
 
 
         void FixedUpdate()
         {
-            for (int index = 0; index < foodInventorys.Length; index++)
+            for (int index = 0; index < recieverFoods.Length; index++)
             {
-                ConsumeRessources(foodInventorys[index], dwellingSlots[index].dwarfsAlreadyIn);
+                ConsumeRessources(recieverFoods[index], foodConsumers[index], dwellingSlots[index].dwarfsAlreadyIn);
             }
         }
 
-        private void ConsumeRessources(FoodInventory foodInventory, int NmbDwarfIn)
+        private void ConsumeRessources(ReceiverComponent receiverComponent, FoodConsumer foodConsumer, int nmbDwarfIn)
         {
-            if(!foodInventory)
+            if(!receiverComponent)
                 return;
 
-            if (foodInventory.timeSinceLastConsumption >= foodInventory.minuteBeforConsuming * FramesPerSecond * secondPerMinute)
+            if (foodConsumer.timeSinceLastConsumption >= foodConsumer.minuteBeforConsuming * FramesPerSecond * secondPerMinute)
             {
-                foodInventory.foodStoredIn -= NmbDwarfIn;
-                foodInventory.timeSinceLastConsumption = 0;
+                receiverComponent.amount -= nmbDwarfIn;
+                foodConsumer.timeSinceLastConsumption = 0;
             }
             else
             {
-                foodInventory.timeSinceLastConsumption++;
+                foodConsumer.timeSinceLastConsumption++;
             }
         }
     }
