@@ -178,6 +178,8 @@ namespace Nastrond {
             List<WorkingSlotIndexComponent> newWorkingSlotIndexComponents = workingSlotIndexComponents.ToList();
             if(entity.GetComponent<WorkingSlotIndexComponent>()) {
                 newWorkingSlotIndexComponents.Add(entity.GetComponent<WorkingSlotIndexComponent>());
+            } else {
+                newWorkingSlotIndexComponents.Add(null);
             }
 
             workingSlotIndexComponents = newWorkingSlotIndexComponents.ToArray();

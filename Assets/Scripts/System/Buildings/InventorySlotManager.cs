@@ -60,11 +60,11 @@ namespace Nastrond {
                 if (dwarfsSlotsComponent.dwarfsInside.Count <= 0) {
                     continue;
                 }
-
+                
                 for (int i = 0; i < dwarfsSlotsComponent.dwarfsInside.Count; i++) {
                     InventoryComponent inventoryComponent = dwarfsSlotsComponent.dwarfsInside[i];
                     bool found = false;
-
+                    
                     foreach (InventoryComponent component in dwarfsSlotsComponent.dwarfsInside) {
                         if (component == inventoryComponent) {
                             found = true;
@@ -84,9 +84,6 @@ namespace Nastrond {
                         foreach (GiverComponent component in giverComponent) {
                             if (component.nbDwarfsAttributed > 0 &&
                                 component.resourceType == inventoryComponent.resourceType) {
-                                if (inventoryComponent.amount >= inventoryComponent.maxCapacity) {
-                                    continue;
-                                }
 
                                 if (component.amount < inventoryComponent.maxCapacity) {
                                     inventoryComponent.amount = component.amount;
@@ -124,7 +121,7 @@ namespace Nastrond {
                                     inventoryComponent.amount = 0;
                                 }
 
-                                dwarfsSlotsComponent.dwarfsInside.Remove(inventoryComponent);
+                                //dwarfsSlotsComponent.dwarfsInside.Remove(inventoryComponent);
                                 break;
                             }
                         }
