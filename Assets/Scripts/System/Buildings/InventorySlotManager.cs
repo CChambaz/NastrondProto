@@ -81,7 +81,7 @@ namespace Nastrond {
 
                     if (giverComponent != null && giverComponent.Length > 0) {
                         foreach (GiverComponent component in giverComponent) {
-                            if (component.resourceType == inventoryComponent.resourceType) {
+                            if (component.nbDwarfsAttributed > 0 && component.resourceType == inventoryComponent.resourceType) {
                                 if(inventoryComponent.amount >= inventoryComponent.maxCapacity)
                                 {
                                     continue;
@@ -94,6 +94,7 @@ namespace Nastrond {
                                     inventoryComponent.amount = inventoryComponent.maxCapacity;
                                 }
                                 component.amount -= inventoryComponent.amount;
+                                component.nbDwarfsAttributed--;
                                 break;
                             }
                         }
@@ -101,9 +102,10 @@ namespace Nastrond {
 
                     if(receiverComponent != null && receiverComponent.Length > 0) {
                         foreach(ReceiverComponent component in receiverComponent) {
-                            if(component.resourceType == inventoryComponent.resourceType) {
+                            if(component.nbDwarfsAttributed > 0 && component.resourceType == inventoryComponent.resourceType) {
                                 component.amount += inventoryComponent.amount;
                                 inventoryComponent.amount = 0;
+                                component.nbDwarfsAttributed--;
                                 break;
                             }
                         }
