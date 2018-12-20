@@ -26,6 +26,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] Text populationQuantity;
 
     Nastrond.GrowthSystem growthSystem;
+    Nastrond.ResourceCounterSystem ressourcesCounter;
 
     GameState gameState;
 
@@ -37,6 +38,7 @@ public class UIManager : MonoBehaviour
         gameState = GameState.PLAY;
 
         growthSystem = FindObjectOfType<Nastrond.GrowthSystem>();
+        ressourcesCounter = FindObjectOfType<Nastrond.ResourceCounterSystem>();
     }
 
     // Update is called once per frame
@@ -51,25 +53,49 @@ public class UIManager : MonoBehaviour
             if (Input.GetKeyUp(hideUIKey))
                 uiCanvas.gameObject.SetActive(!uiCanvas.isActiveAndEnabled);
 
-            if (stoneQuantity.isActiveAndEnabled)
-                stoneQuantity.text = "18623";       // Example value
+            if (ressourcesCounter != null)
+            {
+                if (stoneQuantity.isActiveAndEnabled)
+                    stoneQuantity.text = ressourcesCounter.GetStoneAmount().ToString();
 
-            if (basaltQuantity.isActiveAndEnabled)
-                basaltQuantity.text = "50301";       // Example value
+                if (basaltQuantity.isActiveAndEnabled)
+                    basaltQuantity.text = ressourcesCounter.GetBasaltAmount().ToString();
 
-            if (ironQuantity.isActiveAndEnabled)
-                ironQuantity.text = "69696";          // Example value
+                if (ironQuantity.isActiveAndEnabled)
+                    ironQuantity.text = ressourcesCounter.GetIronAmount().ToString();
 
-            if (coalQuantity.isActiveAndEnabled)
-                coalQuantity.text = "12345";        // Example value
+                if (coalQuantity.isActiveAndEnabled)
+                    coalQuantity.text = ressourcesCounter.GetCoalAmount().ToString();      
 
-            if (toolQuantity.isActiveAndEnabled)
-                toolQuantity.text = "98765";        // Example value
+                if (toolQuantity.isActiveAndEnabled)
+                    toolQuantity.text = ressourcesCounter.GetToolAmount().ToString();      
 
-            if (foodQuantity.isActiveAndEnabled)
-                foodQuantity.text = "25896";        // Example value
+                if (foodQuantity.isActiveAndEnabled)
+                    foodQuantity.text = ressourcesCounter.GetFoodAmount().ToString();      
+            }
+            else
+            {
+                // Show example value
+                if (stoneQuantity.isActiveAndEnabled)
+                    stoneQuantity.text = "18623";
 
-            if (populationQuantity.isActiveAndEnabled)
+                if (basaltQuantity.isActiveAndEnabled)
+                    basaltQuantity.text = "50301";
+
+                if (ironQuantity.isActiveAndEnabled)
+                    ironQuantity.text = "69696";
+
+                if (coalQuantity.isActiveAndEnabled)
+                    coalQuantity.text = "12345";
+
+                if (toolQuantity.isActiveAndEnabled)
+                    toolQuantity.text = "98765";
+
+                if (foodQuantity.isActiveAndEnabled)
+                    foodQuantity.text = "25896";
+            }
+
+            if (growthSystem != null && populationQuantity.isActiveAndEnabled)
                 populationQuantity.text = growthSystem.GetPopulationCount() + "/" + growthSystem.GetPopulationCapacity();
         }
     }

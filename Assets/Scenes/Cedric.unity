@@ -205,6 +205,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &2843688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -316,6 +317,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &3613405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -427,6 +429,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &5602234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -538,6 +541,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &12570974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -649,6 +653,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &15244368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -760,6 +765,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &15805486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -871,6 +877,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &17689755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -982,6 +989,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &19421994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1093,6 +1101,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &21241275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1204,6 +1213,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &23681210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1315,6 +1325,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &29259783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1426,6 +1437,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &32248529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1537,6 +1549,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &33695117
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1648,6 +1661,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &35769660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1759,6 +1773,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &37810040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1870,6 +1885,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &43232268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1981,6 +1997,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &43235959
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2092,6 +2109,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &44782041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2203,6 +2221,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &51044930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2314,6 +2333,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &52031979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2425,6 +2445,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &59165696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2536,6 +2557,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &69475168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2647,6 +2669,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &83431368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2758,6 +2781,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &84490210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2869,6 +2893,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &88003584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2980,6 +3005,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &94294045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3091,6 +3117,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &103456612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3202,6 +3229,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &104784293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3313,6 +3341,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &107036728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3424,6 +3453,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &112040512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3535,6 +3565,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &119957503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3646,6 +3677,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &122164067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3757,6 +3789,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &122854297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3868,6 +3901,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &127821670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3979,6 +4013,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &137489624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4090,6 +4125,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &146136559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4201,6 +4237,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &150773625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4312,6 +4349,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &155681840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4423,6 +4461,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &176862095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4534,6 +4573,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &177210426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4645,6 +4685,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &181200064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4756,6 +4797,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &181430942
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4867,6 +4909,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &184122223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4978,6 +5021,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &189279142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5089,6 +5133,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &191504934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5200,6 +5245,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &193954357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5311,6 +5357,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &196048580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5422,6 +5469,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &204093451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5533,6 +5581,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &207924789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5644,6 +5693,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &209577686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5755,6 +5805,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &216962781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5866,6 +5917,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &219890953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5977,6 +6029,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &223353819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6088,6 +6141,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &234793097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6199,6 +6253,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &236803787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6310,6 +6365,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &237029779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6421,6 +6477,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &242444446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6532,6 +6589,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &244744124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6643,6 +6701,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &245144448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6754,6 +6813,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &255218328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6865,6 +6925,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &259545293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6976,6 +7037,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &269580634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7087,6 +7149,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &271444949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7198,6 +7261,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &272975554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7309,6 +7373,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &282369544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7420,6 +7485,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &283688844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7531,6 +7597,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &286934745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7642,6 +7709,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &288028239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7753,6 +7821,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &289172158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7864,6 +7933,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &290524932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7975,6 +8045,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &294567232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8086,6 +8157,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &298486517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8197,6 +8269,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &301240722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8308,6 +8381,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &307033223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8419,6 +8493,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &309073709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8530,6 +8605,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &312973820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8641,6 +8717,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &314150310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8752,6 +8829,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &323138270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8863,6 +8941,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &332355254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8974,6 +9053,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &333457421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9085,6 +9165,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &334108379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9196,6 +9277,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &344148240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9307,6 +9389,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &346029925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9418,6 +9501,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &349412971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9529,6 +9613,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &357812354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9640,6 +9725,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &359966740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9751,6 +9837,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &364696602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9862,6 +9949,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &365139036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9973,6 +10061,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &366559627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10084,6 +10173,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &367643218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10195,6 +10285,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &367796499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10306,6 +10397,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &372345749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10417,6 +10509,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &382911231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10528,6 +10621,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &385410698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10639,6 +10733,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &387814505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10750,6 +10845,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &389565598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10861,6 +10957,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &390797004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10972,6 +11069,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &395228645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11083,6 +11181,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &400408962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11194,6 +11293,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &401979738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11305,6 +11405,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &403776202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11416,6 +11517,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &412188402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11527,6 +11629,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &418429925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11638,6 +11741,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &432788864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11749,6 +11853,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &436792744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11860,6 +11965,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &437321237
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11971,6 +12077,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &442974392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12082,6 +12189,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &447905895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12193,6 +12301,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &452306479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12211,6 +12320,21 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 452306476}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &452306481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452306477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08558bd83cf7dee49b933b1397a25892, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amount: 2682
+  maxCapacity: 2000
+  resourceType: 5
 --- !u!1001 &456640433
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12304,6 +12428,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &456640436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12415,6 +12540,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &459731106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12526,6 +12652,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &460411170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12637,6 +12764,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &467466953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12748,6 +12876,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &467854702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12859,6 +12988,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &468212539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12970,6 +13100,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &471492815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13081,6 +13212,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &474381029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13192,6 +13324,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &484943205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13303,6 +13436,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &494517187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13414,6 +13548,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &498169830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13525,6 +13660,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &504190824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13636,6 +13772,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &508075858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13747,6 +13884,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &508978394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13858,6 +13996,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &510938221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13969,6 +14108,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &511721634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14080,6 +14220,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &513262010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14191,6 +14332,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &515523494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14302,6 +14444,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &518409610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14413,6 +14556,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &519024583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14524,6 +14668,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &519256468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14635,6 +14780,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &530320574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14746,6 +14892,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &535073854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14857,6 +15004,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &537041938
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14980,12 +15128,28 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!4 &537432301 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 366891935592690281, guid: 45835bed3f0cbab4cb5233a77756415d,
     type: 3}
   m_PrefabInstance: {fileID: 537432297}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &537432302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 537432298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08558bd83cf7dee49b933b1397a25892, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amount: 7506
+  maxCapacity: 2000
+  resourceType: 2
 --- !u!1001 &540806518
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15079,6 +15243,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &540806521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15190,6 +15355,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &545766185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15301,6 +15467,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &546425178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15412,6 +15579,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &548417423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15523,6 +15691,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &551389609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15634,6 +15803,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &553854980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15745,6 +15915,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &556809821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15856,6 +16027,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &560747448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15967,6 +16139,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &562982722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16078,6 +16251,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &564597475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16189,6 +16363,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &568580189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16300,6 +16475,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &569445702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16411,6 +16587,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &573294597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16522,6 +16699,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &578482060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16540,6 +16718,21 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 578482057}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &578482062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578482058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08558bd83cf7dee49b933b1397a25892, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amount: 15000
+  maxCapacity: 2000
+  resourceType: 1
 --- !u!1001 &578790787
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16633,6 +16826,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &578790790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16744,6 +16938,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &587924398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16855,6 +17050,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &599066476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16966,6 +17162,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &604441572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17077,6 +17274,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &604874935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17200,6 +17398,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &613036359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17311,6 +17510,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &613471619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17422,6 +17622,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &616109177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17533,6 +17734,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &616290306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17644,6 +17846,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &617354983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17755,6 +17958,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &621543650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17866,6 +18070,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &625698621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17884,6 +18089,21 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 625698618}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &625698623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 625698619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08558bd83cf7dee49b933b1397a25892, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amount: 5689
+  maxCapacity: 2000
+  resourceType: 3
 --- !u!1001 &627797920
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17977,6 +18197,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &627797923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18088,6 +18309,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &642404804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18199,6 +18421,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &652630805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18310,6 +18533,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &653001332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18421,6 +18645,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &663520672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18532,6 +18757,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &665465637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18643,6 +18869,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &667021447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18754,6 +18981,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &669076399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18865,6 +19093,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &671336475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18976,6 +19205,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &674739870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19087,6 +19317,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &677606050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19198,6 +19429,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &677813984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19309,6 +19541,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &682863399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19420,6 +19653,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &683373654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19531,6 +19765,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &688542157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19642,6 +19877,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &691939401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19753,6 +19989,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &699378557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19864,6 +20101,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &702817021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19975,6 +20213,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &703645483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20086,6 +20325,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &706868632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20197,6 +20437,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &719424128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20308,6 +20549,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &721430490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20419,6 +20661,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &728093360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20530,6 +20773,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &730159887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20641,6 +20885,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &732066306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20752,6 +20997,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &733045780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20863,6 +21109,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &734276694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20974,6 +21221,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &743509261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21085,6 +21333,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &751269471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21196,6 +21445,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &757475561
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21307,6 +21557,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &773027193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21418,6 +21669,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &782807004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21529,6 +21781,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &787316735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21640,6 +21893,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &787872342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21751,6 +22005,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &794446203
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21862,6 +22117,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &795200197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21973,6 +22229,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &799303593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22084,6 +22341,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &801688820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22195,6 +22453,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &802891129
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22306,6 +22565,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &804356716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22417,6 +22677,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &816707658
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22528,6 +22789,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &821836312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22639,6 +22901,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &821970468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22750,6 +23013,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &822495397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22861,6 +23125,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &822602579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22972,6 +23237,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &827027289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23083,6 +23349,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &828745798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23194,6 +23461,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &829405047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23305,6 +23573,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &830402849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23416,6 +23685,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &832893505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23527,6 +23797,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &835841353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23638,6 +23909,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &842154088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23749,6 +24021,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &847378487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23860,6 +24133,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &869509479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23971,6 +24245,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &878488767
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24082,6 +24357,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &879365246
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24193,6 +24469,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &891027556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24304,6 +24581,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &891430070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24415,6 +24693,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &898852910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24526,6 +24805,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &902807137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24637,6 +24917,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &909309946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24748,6 +25029,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &914617219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24859,6 +25141,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &916068040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24877,6 +25160,21 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 916068037}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &916068042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916068038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08558bd83cf7dee49b933b1397a25892, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amount: 358
+  maxCapacity: 2000
+  resourceType: 4
 --- !u!1001 &918764618
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24970,6 +25268,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &918764621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25081,6 +25380,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &921005093
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25192,6 +25492,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &927721600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25303,6 +25604,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &931596071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25414,6 +25716,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &932054008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25525,6 +25828,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &932259911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25636,6 +25940,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &943845133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25747,6 +26052,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &955642606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25858,6 +26164,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &957833310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25969,6 +26276,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &957912674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26080,6 +26388,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &965547289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26257,6 +26566,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &968936076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26368,6 +26678,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &974341471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26479,6 +26790,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &975366559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26590,6 +26902,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &977345566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26701,6 +27014,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &980395841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26812,6 +27126,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &988028004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26923,6 +27238,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &991344002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27034,6 +27350,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &994490316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27145,6 +27462,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &998636364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27256,6 +27574,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &999041338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27367,6 +27686,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1000429198
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27478,6 +27798,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1003865206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27589,6 +27910,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1006045191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27700,6 +28022,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1017108375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27811,6 +28134,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1017860576
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27922,6 +28246,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1018073148
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28033,6 +28358,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1020340315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28144,6 +28470,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1022984384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28255,6 +28582,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1023356242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28366,6 +28694,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1024096400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28477,6 +28806,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1027168921
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28588,6 +28918,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1027280092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28699,6 +29030,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1027344424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28810,6 +29142,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1028422580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28921,6 +29254,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1033558140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29032,6 +29366,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1045953342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29143,6 +29478,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1046267176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29254,6 +29590,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1057020482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29365,6 +29702,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1066966509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29476,6 +29814,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1067788009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29587,6 +29926,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1068152001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29698,6 +30038,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1071042163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29809,6 +30150,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1072202800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29920,6 +30262,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1087919259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30031,6 +30374,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1097860037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30142,6 +30486,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1099430368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30253,6 +30598,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1103872808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30364,6 +30710,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1104373301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30475,6 +30822,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1107462713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30586,6 +30934,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1109622276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30697,6 +31046,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1111459172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30808,6 +31158,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1118145042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30919,6 +31270,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1120678980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31030,6 +31382,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1125136702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31141,6 +31494,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1129761554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31252,6 +31606,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1130302430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31363,6 +31718,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1140429533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31474,6 +31830,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1142301697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31585,6 +31942,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1146206355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31696,6 +32054,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1146561942
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31807,6 +32166,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1147011623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31918,6 +32278,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1148035691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32029,6 +32390,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1152735470
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32140,6 +32502,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1156486294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32251,6 +32614,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1158995709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32362,6 +32726,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1160879060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32473,6 +32838,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1161061340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32584,6 +32950,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1163099900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32695,6 +33062,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1169852846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32806,6 +33174,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1170793859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32917,6 +33286,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1170874671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33028,6 +33398,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1174461251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33139,6 +33510,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1175085274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33250,6 +33622,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1178091685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33361,6 +33734,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1185762690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33472,6 +33846,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1194107916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33583,6 +33958,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1198868474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33694,6 +34070,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1200939888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33805,6 +34182,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1213291404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33916,6 +34294,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1228794590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34027,6 +34406,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1235978509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34138,6 +34518,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1236015002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34249,6 +34630,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1240059829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34360,6 +34742,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1243626128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34378,6 +34761,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1243626125}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1263416203
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1263416205}
+  - component: {fileID: 1263416204}
+  - component: {fileID: 1263416206}
+  - component: {fileID: 1263416207}
+  m_Layer: 0
+  m_Name: ManagerSystems
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1263416204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263416203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0cb759394e38614795e4c5e1d078d47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1263416205
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263416203}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.5917362, y: 0.51554084, z: -8.7421875}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1263416206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263416203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6e0f45d32f9e7441afb5147f8dcc894, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1263416207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263416203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4698a2362893437468b261b649bb9d61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1269614083
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34471,6 +34923,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1269614086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34582,6 +35035,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1269770127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34693,6 +35147,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1270506627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34804,6 +35259,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1289046459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34915,6 +35371,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1289973937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35026,6 +35483,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1297960707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35137,6 +35595,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1297999346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35248,6 +35707,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1303694973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35281,7 +35741,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1303791211
 Transform:
   m_ObjectHideFlags: 0
@@ -35896,6 +36356,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1307053266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36007,6 +36468,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1309787818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36118,6 +36580,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1311516371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36229,6 +36692,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1335400687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36340,6 +36804,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1342690118
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36451,6 +36916,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1348404706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36562,6 +37028,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1352563268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36673,6 +37140,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1353464878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36784,6 +37252,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1356276597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36895,6 +37364,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1365749995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37006,6 +37476,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1374805027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37117,6 +37588,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1384155434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37228,6 +37700,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1384901344
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37339,6 +37812,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1392730493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37450,6 +37924,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1398098949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37561,6 +38036,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1406828466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37672,6 +38148,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1408846513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37783,6 +38260,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1411098251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37894,6 +38372,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1417357454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38005,6 +38484,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1417648200
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38116,6 +38596,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1418462830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38227,6 +38708,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1427422213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38338,6 +38820,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1434101979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38449,6 +38932,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1435814054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38560,6 +39044,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1452218947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38671,6 +39156,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1452857506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38782,6 +39268,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1454197239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38893,6 +39380,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1460639756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39004,6 +39492,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1460860474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39115,6 +39604,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1460984803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39226,6 +39716,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1464314479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39337,6 +39828,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1469543563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39448,6 +39940,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1472845888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39559,6 +40052,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1477820166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39670,6 +40164,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1490663618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39781,6 +40276,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1494257044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39892,6 +40388,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1505834172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40003,6 +40500,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1516276991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40114,6 +40612,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1523975451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40225,6 +40724,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1528921556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40336,6 +40836,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1530015747
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40447,6 +40948,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1534542568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40558,6 +41060,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1541946081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40669,6 +41172,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1543776726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40780,6 +41284,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1556990150
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40891,6 +41396,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1557230678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41002,6 +41508,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1559927667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41113,6 +41620,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1564053300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41224,6 +41732,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1567020605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41335,6 +41844,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1567679970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41446,6 +41956,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1576622683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41557,6 +42068,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1576869014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41668,6 +42180,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1582094854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41779,6 +42292,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1584721738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41890,6 +42404,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1586624369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42001,6 +42516,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1592811607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42112,6 +42628,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1596757616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42223,6 +42740,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1596966441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42334,6 +42852,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1597276214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42445,6 +42964,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1604214813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42556,6 +43076,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1610556842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42667,6 +43188,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1612991478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42778,6 +43300,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1616407469
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42889,6 +43412,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1621312339
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43000,6 +43524,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1630171220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43111,6 +43636,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1640066828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43222,6 +43748,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1640398332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43333,6 +43860,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1647653168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43444,6 +43972,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1649812575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43555,6 +44084,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1656112931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43666,6 +44196,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1663555202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43777,6 +44308,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1667363442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43888,6 +44420,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1680296813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43999,6 +44532,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1681717272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44110,6 +44644,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1682553569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44221,6 +44756,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1688657509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44332,6 +44868,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1693786494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44443,6 +44980,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1695786551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44554,6 +45092,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1698883841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44665,6 +45204,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1699369351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44776,6 +45316,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1700409029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44887,6 +45428,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1704367790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44998,6 +45540,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1706229086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45109,6 +45652,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1707464649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45220,6 +45764,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1719674068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45331,6 +45876,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1721489504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45442,6 +45988,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1723099831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45553,6 +46100,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1728385163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45664,6 +46212,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1730142515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45775,6 +46324,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1735882124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45886,6 +46436,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1737116289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45997,6 +46548,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1739653762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46108,6 +46660,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1740916964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46219,6 +46772,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1741155222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46330,6 +46884,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1758591611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46441,6 +46996,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1758812635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46552,6 +47108,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1760113852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46663,6 +47220,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1760800040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46774,6 +47332,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1764776706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46885,6 +47444,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1795635987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46996,6 +47556,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1795688546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47107,6 +47668,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1807316450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47218,6 +47780,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1808426929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47329,6 +47892,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1815161215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47440,6 +48004,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1819571819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47551,6 +48116,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1821717529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47662,6 +48228,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1828192716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47773,6 +48340,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1832279252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47884,6 +48452,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1838370969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47995,6 +48564,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1841964675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48106,6 +48676,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1845457652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48217,6 +48788,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1851821159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48328,6 +48900,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1860475482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48439,6 +49012,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1866389446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48550,6 +49124,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1866834450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48661,6 +49236,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1868130893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48772,6 +49348,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1874836473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48883,6 +49460,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1878438390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48994,6 +49572,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1881911316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49105,6 +49684,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1885849129
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49216,6 +49796,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1890296115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49327,6 +49908,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1899112891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49438,6 +50020,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1900757464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49549,6 +50132,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1904571337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49660,6 +50244,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1906400953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49771,6 +50356,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1906814619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49882,6 +50468,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1908651222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49993,6 +50580,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1917344501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50104,6 +50692,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1922674054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50215,6 +50804,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1927497948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50233,6 +50823,21 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1927497945}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1927497950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927497946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08558bd83cf7dee49b933b1397a25892, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amount: 586
+  maxCapacity: 2000
+  resourceType: 6
 --- !u!1001 &1931890170
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50326,6 +50931,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1931890173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50437,6 +51043,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1935747003
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50548,6 +51155,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1943153141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50659,6 +51267,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1945146175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50770,6 +51379,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1951132882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50881,6 +51491,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1954562258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50992,6 +51603,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1959324956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51103,6 +51715,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1961438217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51214,6 +51827,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1966183883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51325,6 +51939,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1970802948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51436,6 +52051,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1972260763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51547,6 +52163,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1974557251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51658,6 +52275,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1975487190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51769,6 +52387,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1977417596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51880,6 +52499,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1977789316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51991,6 +52611,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1979233462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52102,6 +52723,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1983923567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52213,6 +52835,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1987165502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52324,6 +52947,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1989962430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52435,6 +53059,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1990208264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52546,6 +53171,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1991311945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52739,6 +53365,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1993746813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52850,6 +53477,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1996969151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52961,6 +53589,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1997123416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53072,6 +53701,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &1997385457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53183,6 +53813,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &2000147778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53294,6 +53925,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &2000359880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53405,6 +54037,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &2011890120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53516,6 +54149,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &2015939760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53627,6 +54261,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &2018792830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53738,6 +54373,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &2019613811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53849,6 +54485,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &2046126382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53960,6 +54597,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &2054747856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54071,6 +54709,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &2055045685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54182,6 +54821,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &2069435722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54293,6 +54933,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &2070174406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54404,6 +55045,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &2071516413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54515,6 +55157,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &2075230431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54626,6 +55269,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &2077522528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54737,6 +55381,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &2078058667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54848,6 +55493,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &2086386035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54959,6 +55605,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &2087965059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55070,6 +55717,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &2092898122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55181,6 +55829,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &2101597397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55292,6 +55941,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &2102395955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55403,6 +56053,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &2105676884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55514,6 +56165,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &2106315941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55625,6 +56277,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &2108121792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55736,6 +56389,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &2115814581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55847,6 +56501,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &2116503555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55958,6 +56613,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &2116691632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56069,6 +56725,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &2123033925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56180,6 +56837,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &2125707847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56291,6 +56949,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &2127698283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56402,6 +57061,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &2132287413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56513,6 +57173,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &2133185159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56624,6 +57285,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &2133828751
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56735,6 +57397,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &2134786835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56846,6 +57509,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &2137325414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56957,6 +57621,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &2139068478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57068,6 +57733,7 @@ MonoBehaviour:
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
   dwarfsInside: []
+  attributedWorkingsSlotIndexComponent: []
 --- !u!114 &2144513382
 MonoBehaviour:
   m_ObjectHideFlags: 0
