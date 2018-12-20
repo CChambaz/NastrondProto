@@ -13,6 +13,8 @@ namespace Nastrond
         //Dwarfs
         PathComponent[] pathComponents;
         Transform[] dwarfsTransformComponents;
+        InventoryComponent[] dwarfsInventoryComponents;
+        DwarfsSlots[] dwarfsInventorySlotComponents;
 
         //Building Give
         DwarfsSlots[] giverDwarfsSlotComponents;
@@ -25,10 +27,9 @@ namespace Nastrond
         ReceiverComponent[] receiverComponents;
 
         //Building Storage
-        InventoryComponent[][] passiveInventoryInventoryComponents;
         DwarfsSlots[] passiveInventoryDwarfsSlotsComponents;
         Transform[] passiveInventoryTransformsComponents;
-        PassiveInventoryComponent[] passiveInventoryComponents;
+        public PassiveInventoryComponent[] passiveInventoryComponents;
 
         void Start() {
             //Dwarfs
@@ -47,7 +48,6 @@ namespace Nastrond
             List<ReceiverComponent> tmpReceiverComponents = new List<ReceiverComponent>();
 
             //Storage
-            List<InventoryComponent[]> tmpPassiveInventoryInventoryInventoryComponents = new List<InventoryComponent[]>();
             List<DwarfsSlots> tmpPassiveInventoryDwarfsSlotsComponents = new List<DwarfsSlots>();
             List<Transform> tmpPassiveInventoryTransformsComponents = new List<Transform>();
             List<PassiveInventoryComponent> tmpPassiveInventoryComponents = new List<PassiveInventoryComponent>();
@@ -70,19 +70,19 @@ namespace Nastrond
                     tmpReceiverComponents.Add(e.GetComponent<ReceiverComponent>());
                     tmpReceiverBuildingsTransformsComponents.Add(e.GetComponent<Transform>());
                 }else if (e.GetComponent<PassiveInventoryComponent>() &&
-                          e.GetComponent<DwarfsSlots>() && 
-                          e.GetComponent<InventoryComponent>()) {
-                    tmpPassiveInventoryComponents.Add(e.GetComponent<PassiveInventoryComponent>());
-                    InventoryComponent[] inventories = e.GetComponents<InventoryComponent>();
-                    tmpPassiveInventoryInventoryInventoryComponents.Add(inventories);
-                    tmpPassiveInventoryDwarfsSlotsComponents.Add(e.GetComponent<DwarfsSlots>());
-                    tmpPassiveInventoryTransformsComponents.Add(e.GetComponent<Transform>());
+                          e.GetComponent<DwarfsSlots>()) {
+                    foreach (PassiveInventoryComponent passiveInventoryComponent in e.GetComponents<PassiveInventoryComponent>()) {
+                        tmpPassiveInventoryComponents.Add(passiveInventoryComponent);
+                        tmpPassiveInventoryDwarfsSlotsComponents.Add(e.GetComponent<DwarfsSlots>());
+                        tmpPassiveInventoryTransformsComponents.Add(e.GetComponent<Transform>());
+                    }
                 }
             }
 
             //Dwarfs
             pathComponents = tmpPathComponents.ToArray();
             dwarfsTransformComponents = tmpDwarfsTransformComponents.ToArray();
+            dwarfsInventoryComponents = tmpDwarfsInventoryComponents.ToArray();
 
             //Giver
             giverDwarfsSlotComponents = tmpGiverDwarfsSlotsComponents.ToArray();
@@ -95,7 +95,6 @@ namespace Nastrond
             receiverTransformComponents = tmpReceiverBuildingsTransformsComponents.ToArray();
 
             //Storage
-            passiveInventoryInventoryComponents = tmpPassiveInventoryInventoryInventoryComponents.ToArray();
             passiveInventoryDwarfsSlotsComponents = tmpPassiveInventoryDwarfsSlotsComponents.ToArray();
             passiveInventoryTransformsComponents = tmpPassiveInventoryTransformsComponents.ToArray();
             passiveInventoryComponents = tmpPassiveInventoryComponents.ToArray();
@@ -109,7 +108,7 @@ namespace Nastrond
             if (dayCycleSystem.state != DayCycleSystem.State.WORK) {
                 return;
             }
-
+            
             //Get ressource from giver then go the passiveInventory
             for (int index = 0; index < giverComponents.Length; index++) {
                 GiverComponent giverComponent = giverComponents[index];
@@ -119,16 +118,29 @@ namespace Nastrond
                     PathComponent pathComponent = pathComponents[i];
                     if (pathComponent.nodes.Length != 0) continue;
 
-                    giverComponent.nbDwarfsAttributed++;
-
                     Transform giverBuildingTransformsComponent = giverTransformComponents[index];
                     DwarfsSlots giverDwarfsSlots = giverDwarfsSlotComponents[index];
 
                     Transform dwarfsTransform = dwarfsTransformComponents[i];
 
+                    //Then go to closet storage
+                    int indexPassiveInventory = GetClosestStorageIndexFromBuilding(giverBuildingTransformsComponent.position, giverComponent.resourceType);
+
+                    if (indexPassiveInventory == -1) {
+                        continue;
+                    }
+                    InventoryComponent dwarfsInventoryComponent = dwarfsInventoryComponents[i];
+
                     if(pathComponent.index != 0 && pathComponent.dwarfsSlots[pathComponent.index - 1] != null) {
                         pathComponent.dwarfsSlots[pathComponent.index - 1].dwarfsAlreadyIn--;
+                        pathComponent.dwarfsSlots[pathComponent.index - 1].dwarfsInside
+                            .Remove(dwarfsInventoryComponent);
+
                     }
+
+                    giverComponent.nbDwarfsAttributed++;
+                    
+                    dwarfsInventoryComponent.resourceType = giverComponent.resourceType;
 
                     //Go to giver
                     pathComponent.nodes = aStarSystem.GetPath(dwarfsTransform, giverBuildingTransformsComponent);
@@ -137,7 +149,12 @@ namespace Nastrond
                     pathComponent.index = 0;
 
                     //Then go to closet storage
+                    GraphNodeComponent[] path2  = aStarSystem.GetPath(giverBuildingTransformsComponent, passiveInventoryTransformsComponents[indexPassiveInventory]);
+                    DwarfsSlots[] slots2 = new DwarfsSlots[path2.Length];
+                    slots2[path2.Length - 1] = passiveInventoryDwarfsSlotsComponents[indexPassiveInventory];
 
+                    pathComponent.nodes = pathComponent.nodes.Concat(path2).ToArray();
+                    pathComponent.dwarfsSlots = pathComponent.dwarfsSlots.Concat(slots2).ToArray();
                     break;
                 }
             }
@@ -146,7 +163,7 @@ namespace Nastrond
             for(int index = 0;index < receiverComponents.Length;index++) {
                 ReceiverComponent receiverComponent = receiverComponents[index];
                 if(receiverComponent.nbDwarfsAttributed >= 1 || receiverComponent.amount >= receiverComponent.maxCapacity) continue;
-
+                
 
                 for(int i = 0;i < pathComponents.Length;i++) {
                     PathComponent pathComponent = pathComponents[i];
@@ -174,6 +191,27 @@ namespace Nastrond
                     break;
                 }
             }
+        }
+
+        int GetClosestStorageIndexFromBuilding(Vector2 pos, ResourceType ressourceType) {
+            int minIndex = -1;
+            float minDistance = float.MaxValue;
+
+            for (int index = 0; index < passiveInventoryTransformsComponents.Length; index++) {
+                if (passiveInventoryComponents[index].resourceType != ressourceType) {
+                    continue;
+                }
+
+                Transform passiveInventoryTransformsComponent = passiveInventoryTransformsComponents[index];
+                float distance = Vector2.Distance(passiveInventoryTransformsComponent.position, pos);
+
+                if (distance < minDistance) {
+                    minDistance = distance;
+                    minIndex = index;
+                }
+            }
+
+            return minIndex;
         }
     }
 }

@@ -11,6 +11,7 @@ namespace Nastrond
         PathComponent[] pathComponents;
         MotionComponent[] motionComponents;
         Transform[] transformComponents;
+        InventoryComponent[] inventoryComponents;
 
         // Start is called before the first frame update
         void Start()
@@ -18,6 +19,7 @@ namespace Nastrond
             List<PathComponent> tmpPathComponents = new List<PathComponent>();
             List<MotionComponent> tmpMotionComponents = new List<MotionComponent>();
             List<Transform> tmpTransformComponents = new List<Transform>();
+            List<InventoryComponent> tmpInventoryComponents = new List<InventoryComponent>();
 
             List<GameObject> tmpEntities = GetEntities();
 
@@ -27,12 +29,19 @@ namespace Nastrond
                     tmpMotionComponents.Add(e.GetComponent<MotionComponent>());
                     tmpPathComponents.Add(e.GetComponent<PathComponent>());
                     tmpTransformComponents.Add(e.transform);
+                    if (e.GetComponent<InventoryComponent>()) {
+                        tmpInventoryComponents.Add(e.GetComponent<InventoryComponent>());
+                    }
+                    else {
+                        tmpInventoryComponents.Add(null);
+                    }
                 }
             }
 
             pathComponents = tmpPathComponents.ToArray();
             motionComponents = tmpMotionComponents.ToArray();
             transformComponents = tmpTransformComponents.ToArray();
+            inventoryComponents = tmpInventoryComponents.ToArray();
         }
 
         // Update is called once per frame
@@ -42,6 +51,7 @@ namespace Nastrond
                 MotionComponent motionComponent = motionComponents[index];
                 PathComponent pathComponent = pathComponents[index];
                 Transform transformComponent = transformComponents[index];
+                InventoryComponent inventoryComponent = inventoryComponents[index];
 
                 if (pathComponent.nodes.Length == 0) {
                     continue;
@@ -53,9 +63,15 @@ namespace Nastrond
 
                     if(pathComponent.index != 0 && pathComponent.dwarfsSlots[pathComponent.index - 1] != null) {
                         pathComponent.dwarfsSlots[pathComponent.index - 1].dwarfsAlreadyIn--;
+                        if(inventoryComponent != null)
+                        pathComponent.dwarfsSlots[pathComponent.index - 1].dwarfsInside.Remove(inventoryComponent);
                     }
                     if(pathComponent.index != 0 && pathComponent.dwarfsSlots[pathComponent.index] != null) {
                         pathComponent.dwarfsSlots[pathComponent.index].dwarfsAlreadyIn++;
+                        if (inventoryComponent != null) {
+
+                            pathComponent.dwarfsSlots[pathComponent.index].dwarfsInside.Add(inventoryComponent);
+                        }
                     }
                     pathComponent.index++;
                     if (pathComponent.index >= pathComponent.nodes.Length) {
