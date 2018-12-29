@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2679037148196285477}
   - component: {fileID: 3240476199195582647}
   - component: {fileID: 8452657355193241097}
-  - component: {fileID: 6040526052251856299}
+  - component: {fileID: 2405087575320235543}
   m_Layer: 0
   m_Name: Dwelling
   m_TagString: Untagged
@@ -125,7 +125,8 @@ MonoBehaviour:
   attributedDwarfsNumber: 0
   dwarfsAlreadyIn: 0
   attributedDwellingsSlotIndexComponent: []
---- !u!114 &6040526052251856299
+  attributedWorkingsSlotIndexComponent: []
+--- !u!114 &2405087575320235543
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -134,10 +135,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8114020159263660157}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20f0d1c192930af47bc6216884ad14d7, type: 3}
+  m_Script: {fileID: 11500000, guid: ca79c2cb00d8b364e98a4b7286f09ec0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxFoodCapacity: 100
-  foodStoredIn: 50
-  lastConsumptionConsumption: 0
-  minuteBeforConsuming: 2
+  amount: 0
+  maxCapacity: 100
+  resourceType: 1
+  nbDwarfsAttributed: 0

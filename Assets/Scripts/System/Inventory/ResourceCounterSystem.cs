@@ -5,71 +5,98 @@ using UnityEngine.UI;
 
 namespace Nastrond
 {
-
     public class ResourceCounterSystem : System
     {
-        public Text StoneText;
-        public Text FoodText;
-        private int counter;
-
-        List<InventoryComponent> inventoryComponentList;
-
-        // Start is called before the first frame update
-        void Start()
-        {
-            inventoryComponentList = new List<InventoryComponent>();
-            List<GameObject> tmpEntities = GetEntities();
-
-            foreach (GameObject e in tmpEntities)
-            {
-                if (e.GetComponent<InventoryComponent>())
-                {
-                    inventoryComponentList.Add(e.GetComponent<InventoryComponent>());
-                }
-            }
-        }
+        int foodAmount = 0;
+        int stoneAmount = 0;
+        int basalteAmount = 0;
+        int ironAmount = 0;
+        int coalAmount = 0;
+        int toolAmount = 0;
+ 
+        List<PassiveInventoryComponent> inventoryComponentList = new List<PassiveInventoryComponent>();
 
         // Update is called once per frame
         void Update()
         {
             int totalAmountFood = 0;
-
             int totalAmountStone = 0;
+            int totalAmountBasalte = 0;
+            int totalAmountIron = 0;
+            int totalAmountCoal = 0;
+            int totalAmountTool = 0;
 
-            for (int index = 0; index < inventoryComponentList.Count; index++)
+            foreach(PassiveInventoryComponent i in inventoryComponentList)
             {
-                if (inventoryComponentList[index].resourceType == ResourceType.FOOD)
+                switch(i.resourceType)
                 {
-                    totalAmountFood += inventoryComponentList[index].amount;
-                }
-                else
-                {
-                    totalAmountStone += inventoryComponentList[index].amount;
+                    case ResourceType.FOOD:
+                        totalAmountFood += i.amount;
+                        break;
+                    case ResourceType.STONE:
+                        totalAmountStone += i.amount;
+                        break;
+                    case ResourceType.IRON:
+                        totalAmountIron += i.amount;
+                        break;
+                    case ResourceType.BASALT:
+                        totalAmountBasalte += i.amount;
+                        break;
+                    case ResourceType.COAL:
+                        totalAmountCoal += i.amount;
+                        break;
+                    case ResourceType.TOOL:
+                        totalAmountTool += i.amount;
+                        break;
                 }
             }
 
-            StoneText.text = "Stone amount : " + totalAmountStone;
-            FoodText.text = "Food amount : " + totalAmountFood;
-            Debug.Log("total food amount : " + totalAmountFood);
-            Debug.Log("total stone amount : " + totalAmountStone);
+            foodAmount = totalAmountFood;
+            stoneAmount = totalAmountStone;
+            basalteAmount = totalAmountBasalte;
+            ironAmount = totalAmountIron;
+            coalAmount = totalAmountCoal;
+            toolAmount = totalAmountTool;
         }
 
-        public void ShowResources(bool newValue)
+        public void RegisterInventory(PassiveInventoryComponent i)
         {
-            counter++;
-            if (counter % 2 == 1)
-            {
-                StoneText.color = new Color(255f, 0f, 0f, 255f);
-                FoodText.color = new Color(255f, 0f, 0f, 255f);
-            }
-            else
-            {
-                StoneText.color = new Color(255f, 0f, 0f, 0f);
-                FoodText.color = new Color(255f, 0f, 0f, 0f);
-            }
+            inventoryComponentList.Add(i);
+        }
+
+        public void UnregisterInventory(PassiveInventoryComponent i)
+        {
+            inventoryComponentList.Remove(i);
+        }
+
+        public int GetFoodAmount()
+        {
+            return foodAmount;
+        }
+
+        public int GetStoneAmount()
+        {
+            return stoneAmount;
+        }
+
+        public int GetBasaltAmount()
+        {
+            return basalteAmount;
+        }
+
+        public int GetIronAmount()
+        {
+            return ironAmount;
+        }
+
+        public int GetCoalAmount()
+        {
+            return coalAmount;
+        }
+
+        public int GetToolAmount()
+        {
+            return toolAmount;
         }
     }
 }
-
-
-//ResourceCounterSystem

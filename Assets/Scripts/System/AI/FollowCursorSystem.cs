@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace Nastrond
@@ -43,16 +44,33 @@ namespace Nastrond
                     PathComponent pathComponent = pathComponents[index];
                     Transform transformComponent = transformComponents[index];
 
-                    if(pathComponent.dwarfsSlotDestination != null) {
-                        pathComponent.dwarfsSlotDestination.dwarfsAlreadyIn--;
+                    if(pathComponent.index != 0 && pathComponent.dwarfsSlots[pathComponent.index - 1] != null) {
+                        pathComponent.dwarfsSlots[pathComponent.index - 1].dwarfsAlreadyIn--;
                     }
 
                     pathComponent.nodes = aStarSystem.GetPath(transformComponent, v2);
                     pathComponent.index = 0;
-                    pathComponent.dwarfsSlotDestination = null;
+                    pathComponent.dwarfsSlots = new DwarfsSlots[pathComponent.nodes.Length];
                 }
                 Debug.Log("time = " + (Time.realtimeSinceStartup - time));
             }
+        }
+
+        public void AddEntity(GameObject entity)
+        {
+            List<PathComponent> newPathList = pathComponents.ToList();
+            if(entity.GetComponent<PathComponent>()) {
+                newPathList.Add(entity.GetComponent<PathComponent>());
+            }
+
+            pathComponents = newPathList.ToArray();
+
+            List<Transform> newTransformList = transformComponents.ToList();
+            if(entity.GetComponent<Transform>()) {
+                newTransformList.Add(entity.GetComponent<Transform>());
+            }
+
+            transformComponents = newTransformList.ToArray();
         }
     }
 }
