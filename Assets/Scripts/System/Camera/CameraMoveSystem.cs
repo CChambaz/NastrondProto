@@ -4,7 +4,7 @@ using System.Text;
 using UnityEngine;
 
 namespace Nastrond {
-    public class SystemMove : System {
+    public class CameraMoveSystem : System {
         private Vector3 cameraPosition;
         private List<ComponentMove> moveComponents;
         private List<ComponentMap> mapComponents;
@@ -54,28 +54,14 @@ namespace Nastrond {
 
                     Vector2 dir = new Vector2();
                     if (cameraPosition.y > mapComponent.offSet.y) {
-                        if (mousePosition.y < sizeDisplay.y / 100 * 15) {
-                            if (mousePosition.y < sizeDisplay.y / 100 * 5)
-                            {
-                                dir.y = -moveComponent.multiplyVelocity;
-                            }
-                            else
-                            {
-                                dir.y = -1;
-                            }
+                        if (mousePosition.y < sizeDisplay.y / 100 * moveComponent.PercentBoardScreen) {                      
+                           dir.y =-(1 - (mousePosition / (sizeDisplay / 100 * moveComponent.PercentBoardScreen)).y) * moveComponent.multiplyVelocity;
                         }
                     }
 
                     if (cameraPosition.y < mapComponent.offSet.y + mapComponent.sizeMap.y) {
-                        if (mousePosition.y > sizeDisplay.y / 100 * 85) {
-                            if (mousePosition.y > sizeDisplay.y / 100 * 95)
-                            {
-                                dir.y = moveComponent.multiplyVelocity;
-                            }
-                            else
-                            {
-                                dir.y = 1;
-                            }
+                        if (mousePosition.y > sizeDisplay.y / 100 * (100 - moveComponent.PercentBoardScreen)) {
+                            dir.y = (mousePosition.y - sizeDisplay.y / 100 * (100 - moveComponent.PercentBoardScreen)) / (sizeDisplay.y / 100 * moveComponent.PercentBoardScreen) * moveComponent.multiplyVelocity;
                         }
                     }
 
