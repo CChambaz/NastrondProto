@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Nastrond
 {
-    public class SystemZoom : System
+    public class ZoomCameraSystem : System
     {
         private ComponentZoom zoomComponent;
         private Camera camera;
